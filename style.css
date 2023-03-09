@@ -235,16 +235,16 @@ button:hover {
 
 /* Kontakt */
 .contact {
-    background-color: #364c54;
+    background-color: var(--main-blue);
     color: var(--text-light);
     padding: 35px 40px 19px 40px;
-    border-top: solid 12px var(--dark-beige);
+    border-top: solid 12px var(--light-beige);
     margin-top: 60px;
+    color: var(--light-beige);
 }
 
-.contact h3 {
-    color: var(--dark-beige);
-    padding: 30px 0px 20px 0px;
+.contact h2 {
+    padding: 30px 0px 40px 0px;
 }
 
 .contact figure {
