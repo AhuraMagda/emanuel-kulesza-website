@@ -88,7 +88,7 @@ nav li:hover::before, nav li:hover::after {
 h1 {
     text-align: center;
 }
-.intro-text button {
+button {
     padding: 15px;
     margin: 20px;
     color: var(--dark-beige);
@@ -97,7 +97,7 @@ h1 {
     transition: .5s;
 } 
 
-.intro-text button:hover {
+button:hover {
     background-color: var(--dark-beige);
     color: var(--main-blue)
 }
@@ -196,8 +196,34 @@ h1 {
     width: 100%;
 }
 
-/* Instagram */
+/* Shop */
+.shop {
+    height: 100vh;
+    background-color: white;
+    color: var(--text-dark);
+    display: flex;
+    justify-content: space-between;
+}
 
+.shop img {
+    height: 100%;
+}
+
+.shop div {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 0px 70px;
+}
+
+/* Course */
+.course {
+    height: 100vh;
+    background-color: var(--dark-beige);
+}
+
+/* Instagram */
 .instagram {
     height: 100vh;
     display: flex;
@@ -215,6 +241,7 @@ h1 {
     border-top: solid 12px var(--dark-beige);
     margin-top: 60px;
 }
+
 .contact h3 {
     color: var(--dark-beige);
     padding: 30px 0px 20px 0px;
