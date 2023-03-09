@@ -1,0 +1,243 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    border: 0;
+}
+
+:root {
+    --main-blue: #4A6873;
+    --light-beige: #DDD6D1;
+    --dark-beige: #CFB49D;
+    --text-light: #FFFFFF;
+    --text-dark: #5F5F5F;
+}
+
+header {
+    height: 100vh;
+    color: var(--text-light)
+}
+nav {
+    display: flex;
+    padding: 30px 0px 30px 40px;
+    position: absolute;
+    top: 0;
+    align-items: center;
+    background-color: var(--main-blue);
+}
+
+nav img {
+    height: 40px;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav li {
+    list-style: none;
+    padding: 0px 20px;
+    position: relative;
+    cursor: pointer;
+}
+
+nav li::before, nav li::after {
+    content: '';
+    background-color: var(--dark-beige);
+    height: 1px;
+    display: block;
+    transition: width .5s;
+    width: 0px;
+    position: absolute;
+}
+
+nav li::before {
+    left: 0px;
+    top: -5px;
+}
+
+nav li::after {
+    right: 0px;
+    bottom: -5px;
+}
+
+nav li:hover::before, nav li:hover::after {
+    width: 100%;
+}
+
+.intro-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 100%;
+    background-color: var(--main-blue)
+}
+
+.intro-wrapper img {
+    height: 600px;
+    align-self: end;
+}
+
+.intro-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 30px 30px 30px 100px;
+}
+
+h1 {
+    text-align: center;
+}
+.intro-text button {
+    padding: 15px;
+    margin: 20px;
+    color: var(--dark-beige);
+    background-color: var(--main-blue);
+    border: 1px solid var(--dark-beige);
+    transition: .5s;
+} 
+
+.intro-text button:hover {
+    background-color: var(--dark-beige);
+    color: var(--main-blue)
+}
+/* About me */
+
+.about-me {
+    background-color: var(--light-beige);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-me img {
+    height: 600px;
+    border-top: 30px solid white;
+    border-left: 170px solid white;
+    border-bottom: 70px solid white;
+    border-right: 40px solid white;
+    margin-left: 30px;
+}
+
+.about-me p {
+    color: var(--text-dark);
+}
+
+.about-me div:nth-child(2n) {
+    padding-left: 30px;
+    color: var(--text-dark);
+}
+
+/* Newsletter */
+
+.newsletter {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--main-blue);
+    color: var(--text-light);
+}
+
+.newsletter h2 {
+    padding-bottom: 20px;
+}
+
+.newsletter > div {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 70%;
+    border: 1px solid var(--dark-beige);
+    padding: 60px 30px;
+}
+
+.newsletter form {
+    display: flex;
+}
+
+.newsletter-input {
+    width: 300px;
+    height: 30px;
+    padding: 5px;
+    margin: 10px 10px 10px 0px;
+}
+
+.news-name {
+    width: 150px;
+}
+
+.news-button {
+    height: 30px;
+    margin: 10px 0px;
+    background-color: transparent;
+    color: white;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    border: 1px solid black;
+}
+
+
+.news-button::before {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    background-color: black;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all 0.5s;
+}
+
+.news-button:hover::before {
+    width: 100%;
+}
+
+/* Instagram */
+
+.instagram {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    padding: 0px;
+}
+
+/* Kontakt */
+.contact {
+    background-color: #364c54;
+    color: var(--text-light);
+    padding: 35px 40px 19px 40px;
+    border-top: solid 12px var(--dark-beige);
+    margin-top: 60px;
+}
+.contact h3 {
+    color: var(--dark-beige);
+    padding: 30px 0px 20px 0px;
+}
+
+.contact figure {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    font-size: 15px;
+}
+
+.contact img {
+    height: 40px;
+    margin-right: 15px;
+}
+
+.contact a {
+    color: var(--text-light);
+    text-decoration: none;
+}
+
+.contct a:hover {
+    text-decoration: underline;
+    transition: all 0.3s;
+}
