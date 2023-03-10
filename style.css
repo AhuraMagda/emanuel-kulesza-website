@@ -88,7 +88,7 @@ nav li:hover::before, nav li:hover::after {
 h1 {
     text-align: center;
 }
-button {
+.btn {
     padding: 15px;
     margin: 20px;
     color: var(--dark-beige);
@@ -97,7 +97,7 @@ button {
     transition: .5s;
 } 
 
-button:hover {
+.btn:hover {
     background-color: var(--dark-beige);
     color: var(--main-blue)
 }
@@ -170,6 +170,7 @@ button:hover {
 
 .news-button {
     height: 30px;
+    width: 100px;
     margin: 10px 0px;
     background-color: transparent;
     color: white;
@@ -177,8 +178,8 @@ button:hover {
     overflow: hidden;
     cursor: pointer;
     border: 1px solid black;
+    z-index: 1;
 }
-
 
 .news-button::before {
     content: "";
@@ -188,8 +189,8 @@ button:hover {
     background-color: black;
     top: 0;
     left: 0;
+    transition: .6s;
     z-index: -1;
-    transition: all 0.5s;
 }
 
 .news-button:hover::before {
