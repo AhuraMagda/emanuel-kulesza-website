@@ -12,17 +12,15 @@
     --text-dark: #5F5F5F;
 }
 
-header {
-    height: 100vh;
-    color: var(--text-light)
-}
+/* Nav */
+
 nav {
     display: flex;
     padding: 30px 0px 30px 40px;
-    position: absolute;
-    top: 0;
     align-items: center;
-    background-color: var(--main-blue);
+    position: absolute;
+    top: 0px;
+    z-index: 1;
 }
 
 nav img {
@@ -64,18 +62,46 @@ nav li:hover::before, nav li:hover::after {
     width: 100%;
 }
 
+/* Header */
+header {
+    height: 100vh;
+    width: 100vw;
+    color: var(--text-light);
+    background-color: var(--main-blue);
+}
+
+/* Intro  */
 .intro-wrapper {
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: space-around;
-    height: 100%;
-    background-color: var(--main-blue)
+    background-color: var(--main-blue);
+    position: relative;
+}
+
+.intro-wrapper div {
+    width: 50%;
 }
 
 .intro-wrapper img {
-    height: 600px;
-    align-self: end;
+    height: 650px;
+    transition: .5s;
 }
+
+#eman-shadow {
+    position: absolute;
+    right: 40px;
+    bottom: 0px;
+}
+
+#eman-main {
+    position: absolute;
+    right: 40px;
+    bottom: 0px;
+}
+
+
 
 .intro-text {
     display: flex;
@@ -88,6 +114,7 @@ nav li:hover::before, nav li:hover::after {
 h1 {
     text-align: center;
 }
+
 .btn {
     padding: 15px;
     margin: 20px;
@@ -99,7 +126,7 @@ h1 {
 
 .btn:hover {
     background-color: var(--dark-beige);
-    color: var(--main-blue)
+    color: var(--main-blue);
 }
 /* About me */
 
@@ -168,7 +195,7 @@ h1 {
     width: 150px;
 }
 
-.news-button {
+.btn-news {
     height: 30px;
     width: 100px;
     margin: 10px 0px;
@@ -181,7 +208,7 @@ h1 {
     z-index: 1;
 }
 
-.news-button::before {
+.btn-news::before {
     content: "";
     position: absolute;
     width: 0%;
@@ -193,7 +220,7 @@ h1 {
     z-index: -1;
 }
 
-.news-button:hover::before{
+.btn-news:hover::before{
     width: 100%;
 }
 /* 
@@ -223,13 +250,13 @@ h1 {
     padding: 0px 70px;
 }
 
-#btn-shop {
+.btn-shop {
     color: var(--dark-beige);
     border: 1px solid var(--dark-beige);
     margin: 0px;
 }
 
-#btn-shop:hover {
+.btn-shop:hover {
     background-color: var(--dark-beige);
     color: black;
 }

@@ -10,24 +10,27 @@
     <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body>
+    <nav>
+        <img src="./images/logo-light.png" alt="">
+        <ul>
+            <li>O mnie</li>
+            <li>Strefa kursu</li>
+            <li>Konsultacje</li>
+            <li>Sklep</li>
+            <li>Kontakt</li>
+        </ul>
+    </nav>
     <header>
-        <nav>
-            <img src="./images/logo-light.png" alt="">
-            <ul>
-                <li>O mnie</li>
-                <li>Strefa kursu</li>
-                <li>Konsultacje</li>
-                <li>Sklep</li>
-                <li>Kontakt</li>
-            </ul>
-        </nav>
         <div class="intro-wrapper">
             <div class="intro-text">
                 <h1>Pierwszy krok do sukcesu<br> nic Cię nie kosztuje!</h1>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                <button class="btn">BUTTON</button>
+                <button class="btn">Czytaj więcej</button>
             </div>
-            <img src="./images/emancut.png" alt="">
+            <div>
+                <img id="eman-shadow" src="./images/emancut2.png" alt="">
+                <img id="eman-main" src="./images/emancut.png" alt="">
+            </div>
         </div>
     </header>
 
@@ -45,12 +48,14 @@
     <section class="newsletter">
         <div>
             <h2>Darmowy ebook</h2>
-            <p>Zapisz się na listę odbiorców newslettera i pobierz za darmo<br> pierwszy rozdział mojej książki "16 kroków, dzięki którym osiągniesz sukces".</p>
+            <p>Zapisz się na listę odbiorców newslettera
+                i pobierz za darmo pierwszy rozdział mojej książki
+                pt "16 kroków, dzięki którym osiągniesz sukces".</p>
             <form action="https://app.getresponse.com/add_subscriber.html" accept-charset="utf-8" method="post">
                 <input class="newsletter-input news-name" type="text" name="first_name" required placeholder="Imię"/><br/>
                 <input class="newsletter-input" type="text" name="email" required placeholder="E-mail"/><br/>
                 <input type="hidden" name="campaign_token" value="qlUdG" />
-                <button type="submit" class="news-button">Subskrybuj</button>
+                <button type="submit" class="btn-news">Subskrybuj</button>
             </form>
         </div>
     </section>
@@ -61,13 +66,13 @@
         <div>
             <h2>Sklep</h2>
             <p>zapraszam do sklepu, bla bla, kup tam to i to zapraszam do sklepu, bla bla, kup tam to i to zapraszam do sklepu, bla bla, kup tam to i to</p>
-            <button id="btn btn-shop">BUTTON</button>
+            <button class="btn btn-shop">Sprawdź ofertę</button>
         </div>
     </section>
 
     <section class="course">
         <h2>Strefa kursu</h2>
-        <button class="btn" id="btn-course">zaloguj</button>
+        <button class="btn" id="btn-course">Zaloguj</button>
     </section>
 
 
@@ -97,5 +102,6 @@
     </footer>
     <script src="https://apps.elfsight.com/p/platform.js" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="./app.js"></script>
 </body>
 </html>
