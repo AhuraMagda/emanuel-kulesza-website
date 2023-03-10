@@ -193,9 +193,10 @@ h1 {
     z-index: -1;
 }
 
-.news-button:hover::before {
+.news-button:hover::before{
     width: 100%;
 }
+/* 
 
 /* Shop */
 .shop {

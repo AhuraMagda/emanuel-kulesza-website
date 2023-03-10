@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Emanuel Kulesza</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    
     <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body>
@@ -49,8 +49,8 @@
             <form action="https://app.getresponse.com/add_subscriber.html" accept-charset="utf-8" method="post">
                 <input class="newsletter-input news-name" type="text" name="first_name" required placeholder="Imię"/><br/>
                 <input class="newsletter-input" type="text" name="email" required placeholder="E-mail"/><br/>
-                <!-- <input class="news-button" type="submit" value="Subskrybuj"/> -->
-                <button class="news-button">Subskrybuj</button>
+                <input type="hidden" name="campaign_token" value="qlUdG" />
+                <button type="submit" class="news-button">Subskrybuj</button>
             </form>
         </div>
     </section>
@@ -78,18 +78,24 @@
     <section class="contact">
         <h2>Kontakt</h2>
         <figure>
-            <a href="mailto:xxx@mail.com"><img src="./images/m-icon.png" alt="ikonka email"></a>
-            <figcaption><a href="mailto:xxx@mail.com">xxx@mail.com</a></figcaption>
+            <a href="mailto:kontakt@emanuelkulesza.pl
+            "><img src="./images/m-icon.png" alt="ikonka email"></a>
+            <figcaption><a href="mailto:kontakt@emanuelkulesza.pl
+                ">kontakt@emanuelkulesza.pl
+            </a></figcaption>
         </figure>
-        <figure>
-            <a href="https://www.instagram.com/emanuel.kulesza/" target="_blank"><img src="./images/ig-icon.png" alt="ikonka instagram"></a>
-            <figcaption><a href="https://www.instagram.com/emanuel.kulesza/" target="_blank">@_emanuel.kulesza</a></figcaption> 
-        </figure>
+        <p>
+        Dane firmy Kulesza Industry S.K.A<br>
+        NIP 5932632847<br>
+        adres ul. Chłodna 5a, Tczew 83-110
+        </p>
+
     </section>
 
 
     <footer>
     </footer>
     <script src="https://apps.elfsight.com/p/platform.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 </body>
 </html>
