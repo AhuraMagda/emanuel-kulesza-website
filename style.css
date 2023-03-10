@@ -236,11 +236,22 @@ button:hover {
 .course {
     height: 100vh;
     background-color: var(--dark-beige);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
-.course img {
-    background-image: url(./images/people-photo.jpg);
+#btn-course {
+    border: 1px solid var(--text-dark);
+    color: var(--text-dark);
 }
+
+#btn-course:hover {
+    background-color: var(--text-dark);
+    color: var(--light-beige);
+}
+
 /* Instagram */
 .instagram {
     height: 100vh;
