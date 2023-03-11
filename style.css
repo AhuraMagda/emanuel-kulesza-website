@@ -1,7 +1,7 @@
 * {
     box-sizing: border-box;
-    margin: 0;
-    border: 0;
+    margin: 0px;
+    border: 0px;
 }
 
 :root {
@@ -10,6 +10,19 @@
     --dark-beige: #CFB49D;
     --text-light: #FFFFFF;
     --text-dark: #5F5F5F;
+}
+
+.snap {
+    height: 100vh;
+    scroll-snap-align: end;
+}
+
+.wrapper {
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    height: 100vh;
+    overflow: scroll;
+    position: relative;
 }
 
 /* Nav */
@@ -21,6 +34,7 @@ nav {
     position: absolute;
     top: 0px;
     z-index: 1;
+    color: var(--text-light);
 }
 
 nav img {
@@ -101,8 +115,6 @@ header {
     bottom: 0px;
 }
 
-
-
 .intro-text {
     display: flex;
     align-items: center;
@@ -128,8 +140,9 @@ h1 {
     background-color: var(--dark-beige);
     color: var(--main-blue);
 }
-/* About me */
 
+
+/* About me */
 .about-me {
     background-color: var(--light-beige);
     height: 100vh;
@@ -156,8 +169,8 @@ h1 {
     color: var(--text-dark);
 }
 
-/* Newsletter */
 
+/* Newsletter */
 .newsletter {
     height: 100vh;
     display: flex;
@@ -176,8 +189,11 @@ h1 {
     justify-content: center;
     flex-direction: column;
     width: 70%;
-    border: 1px solid var(--dark-beige);
-    padding: 60px 30px;
+    border: 1px solid var(--light-beige);
+    padding: 60px 90px;
+    outline-color: var(--dark-beige);
+    outline-style: solid;
+    outline-offset: 10px;
 }
 
 .newsletter form {
@@ -298,7 +314,10 @@ h1 {
     padding: 35px 40px 19px 40px;
     border-top: solid 12px var(--light-beige);
     margin-top: 60px;
-    color: var(--light-beige);
+    color: var(--text-light);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .contact h2 {
@@ -325,4 +344,8 @@ h1 {
 .contct a:hover {
     text-decoration: underline;
     transition: all 0.3s;
+}
+
+.contact p {
+    margin: 0px;
 }

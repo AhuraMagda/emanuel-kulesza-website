@@ -7,6 +7,7 @@ const changePositionMainPhoto = () => {
     console.log('auuuu')
 }
 
+
 // Intro observer
 
 const options = {
@@ -18,7 +19,7 @@ const options = {
 const introPhotoObserver = new IntersectionObserver(function(entries, emanMainPhotoObserver) {
     entries.forEach(entry => {
         if(entry.isIntersecting) {
-            setTimeout(changePositionMainPhoto, 1500);
+            setTimeout(changePositionMainPhoto, 500);
         } else {
             emanMainPhoto.style.right = "40px";
             console.log('uuuua')
