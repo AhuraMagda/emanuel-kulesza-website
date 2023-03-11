@@ -127,7 +127,7 @@ h1 {
     text-align: center;
 }
 
-.btn {
+.myButton {
     padding: 15px;
     margin: 20px;
     color: var(--dark-beige);
@@ -136,7 +136,7 @@ h1 {
     transition: .5s;
 } 
 
-.btn:hover {
+.myButton:hover {
     background-color: var(--dark-beige);
     color: var(--main-blue);
 }
