@@ -94,26 +94,15 @@ header {
     position: relative;
 }
 
-.intro-wrapper div {
-    width: 50%;
-}
 
 .intro-wrapper img {
-    height: 80%;
+    height: 50vw;
     transition: .5s;
-}
-
-#eman-shadow {
     position: absolute;
     right: 40px;
     bottom: 0px;
 }
 
-#eman-main {
-    position: absolute;
-    right: 40px;
-    bottom: 0px;
-}
 
 .intro-text {
     display: flex;
@@ -348,4 +337,16 @@ h1 {
 
 .contact p {
     margin: 0px;
+}
+
+/* Media query */
+
+@media screen and (max-width: 1500px) {
+    .intro-wrapper {
+        flex-direction: column;
+    }
+    .intro-wrapper img {
+        left: 0;
+        margin: 0 auto;
+    }
 }
