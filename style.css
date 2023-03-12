@@ -1,7 +1,13 @@
+/* GLOBAL SETTINGS*/
+
 * {
     box-sizing: border-box;
     margin: 0px;
     border: 0px;
+}
+
+html {
+    overflow-x: hidden;
 }
 
 :root {
@@ -25,9 +31,11 @@
     position: relative;
 }
 
-/* Nav */
+
+/* NAVIGATION */
 
 nav {
+    width: 100%;
     display: flex;
     padding: 30px 0px 30px 40px;
     align-items: center;
@@ -76,7 +84,24 @@ nav li:hover::before, nav li:hover::after {
     width: 100%;
 }
 
-/* Header */
+/* hamburger */
+
+.burger {
+    background-color: transparent;
+    display: none;
+}
+
+.line {
+    width: 30px;
+    height: 3px;
+    background-color: black;
+    margin: 7px;
+    border-radius: 20px;
+    transition: .3s ease-in-out;
+}
+
+/* INTRO section  */
+
 header {
     height: 100vh;
     width: 100vw;
@@ -84,7 +109,6 @@ header {
     background-color: var(--main-blue);
 }
 
-/* Intro  */
 .intro-wrapper {
     height: 100%;
     display: flex;
@@ -110,12 +134,14 @@ header {
     justify-content: center;
     flex-direction: column;
     padding: 30px 30px 30px 100px;
+    z-index: 1;
 }
 
 h1 {
     text-align: center;
 }
 
+/* buttons */
 .myButton {
     padding: 15px;
     margin: 20px;
@@ -131,7 +157,8 @@ h1 {
 }
 
 
-/* About me */
+/* ABOUT ME section */
+
 .about-me {
     background-color: var(--light-beige);
     height: 100vh;
@@ -159,7 +186,8 @@ h1 {
 }
 
 
-/* Newsletter */
+/* NEWSLETTER section*/
+
 .newsletter {
     height: 100vh;
     display: flex;
@@ -229,9 +257,10 @@ h1 {
 .btn-news:hover::before{
     width: 100%;
 }
-/* 
 
-/* Shop */
+
+/* SHOP section */
+
 .shop {
     height: 100vh;
     background-color: white;
@@ -243,10 +272,6 @@ h1 {
 .shop h2 {
     color: var(--dark-beige)
 }
-
-/* .shop img {
-    height: 100%;
-} */
 
 .shop div {
     display: flex;
@@ -273,7 +298,9 @@ h1 {
     color: black;
 }
 
-/* Course */
+
+/* COURSE section*/
+
 .course {
     height: 100vh;
     background-color: var(--dark-beige);
@@ -293,7 +320,9 @@ h1 {
     color: var(--light-beige);
 }
 
-/* Instagram */
+
+/* INSTAGRAM section*/
+
 .instagram {
     height: 100vh;
     display: flex;
@@ -303,7 +332,9 @@ h1 {
     padding: 0px;
 }
 
-/* Kontakt */
+
+/* CONTACT   section*/
+
 .contact {
     background-color: var(--main-blue);
     color: var(--text-light);
@@ -346,9 +377,10 @@ h1 {
     margin: 0px;
 }
 
-/* Media query */
 
-@media screen and (max-width: 1500px) {
+/* Media queries */
+
+@media only screen and (max-width: 1500px) {
     .intro-wrapper {
         flex-direction: column;
     }
@@ -358,8 +390,30 @@ h1 {
     }
 }
 
-@media screen and (max-width: 900px) {
+@media only screen and (max-width: 900px) {
     .about-me {
         flex-direction: column;
     }
+    .burger {
+        display: block;
+    }
+    .nav {
+        position: relative;
+    }
+    .nav ul {
+        position: absolute;
+        right: 0px;
+        top: 8vh;
+        background-color: rebeccapurple;
+        height: 92vh;
+        flex-direction: column;
+    }
 }
+
+@media only screen and (max-width: 768px) {
+    nav {
+        position: sticky;
+    }
+
+}
+
