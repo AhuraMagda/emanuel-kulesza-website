@@ -24,7 +24,6 @@ const introPhotoObserver = new IntersectionObserver(function(entries, emanMainPh
             setTimeout(changePositionMainPhoto, 500);
         } else {
             emanMainPhoto.style.right = "40px";
-            console.log('uuuua')
         }
     })
 }, options)

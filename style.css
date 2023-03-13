@@ -55,8 +55,8 @@ nav {
     position: sticky;
 }
 
-nav img {
-    height: 40px;
+.logo {
+    height: 50px;
     margin-top: 20px;
 }
 
@@ -157,7 +157,7 @@ header {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    padding: 30px 30px 30px 100px;
+    padding: 30px;
     z-index: 1;
 }
 
@@ -405,11 +405,24 @@ h1 {
 
 /* Media queries */
 
+@media only screen and (max-width: 700px) {
+    .intro-wrapper img {
+        display: none;
+    }
+    .intro-wrapper {
+        justify-content: center;
+    }
+
+}
+
+
 
 @media only screen and (max-width: 900px) {
     .about-me {
         flex-direction: column;
     }
+
+
     .burger {
         display: block;
         transition: .3s ease-in-out;
@@ -459,6 +472,7 @@ h1 {
     .intro-wrapper img {
         left: 0;
         margin: 0 auto;
+        height: 65vh;
     }
 }
 
