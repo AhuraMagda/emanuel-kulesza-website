@@ -44,3 +44,10 @@ burgerIcon.addEventListener('click', function(){
     mobileNav.classList.toggle('active');
     burgerIcon.classList.toggle('active');
 })
+
+
+// preloader
+const loader = document.querySelector("#preloader");
+window.addEventListener("load", function() {
+    loader.style.display = "none";
+})
