@@ -1,3 +1,5 @@
+
+// --animacja u góry--
 const emanMainPhoto = document.getElementById("eman-main");
 const emanMainShadow = document.getElementById("eman-shadow");
 const header = document.querySelector("header");
@@ -28,3 +30,13 @@ const introPhotoObserver = new IntersectionObserver(function(entries, emanMainPh
 }, options)
 
 introPhotoObserver.observe(header)
+
+// Hamburger mobile
+
+const burgerIcon = document.querySelector(".burger")
+const mobileNav = document.querySelector("nav ul");
+
+burgerIcon.addEventListener('click', function(){
+    mobileNav.classList.toggle('active');
+    burgerIcon.classList.toggle('active');
+})

@@ -36,26 +36,33 @@ html {
 
 nav {
     width: 100%;
+    height: 8vh;
     display: flex;
     padding: 30px 0px 30px 40px;
     align-items: center;
-    position: absolute;
+    position: relative;
     top: 0px;
     z-index: 1;
     color: var(--text-light);
+    background-color: var(--main-blue);
+    justify-content: space-around;
 }
 
 nav img {
     height: 40px;
+    margin-top: 20px;
 }
 
 nav ul {
     display: flex;
+    list-style: none;
+    width: 55%;
+    justify-content: space-around;
 }
 
 nav li {
     list-style: none;
-    padding: 0px 20px;
+    padding: 10px 20px;
     position: relative;
     cursor: pointer;
 }
@@ -84,11 +91,19 @@ nav li:hover::before, nav li:hover::after {
     width: 100%;
 }
 
+nav a {
+    text-decoration: none;
+    color: var(--text-light);
+}
+
 /* hamburger */
 
 .burger {
     background-color: transparent;
     display: none;
+    padding-right: 30px;
+    margin-top: 20px;
+    position: sticky;
 }
 
 .line {
@@ -110,7 +125,7 @@ header {
 }
 
 .intro-wrapper {
-    height: 100%;
+    height: 92%;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -380,6 +395,52 @@ h1 {
 
 /* Media queries */
 
+
+@media only screen and (max-width: 900px) {
+    .about-me {
+        flex-direction: column;
+    }
+    .burger {
+        display: block;
+        transition: .3s ease-in-out;
+    }
+
+    .burger.active .line:first-child {
+        transform: translateY(-300px);
+    }
+    .burger.active .line:nth-child(2) {
+        transform: rotate(-405deg) translateY(8px);
+    }
+
+    .burger.active .line:nth-child(3) {
+        transform: rotate(-320deg) translateY(-10px);
+    }
+
+    nav {
+        position: relative;
+        justify-content: space-between;
+        z-index: 2;
+    }
+    nav ul {
+        position: absolute;
+        right: 0px;
+        top: 8vh;
+        background-color: var(--light-beige);
+        height: 92vh;
+        flex-direction: column;
+        text-align: center;
+        transform: translate(100%);
+    }
+
+    nav a {
+        color: var(--text-dark);
+    }
+
+    nav ul.active {
+        transform: translate(0%);
+    }
+}
+
 @media only screen and (max-width: 1500px) {
     .intro-wrapper {
         flex-direction: column;
@@ -390,30 +451,16 @@ h1 {
     }
 }
 
-@media only screen and (max-width: 900px) {
-    .about-me {
-        flex-direction: column;
-    }
-    .burger {
-        display: block;
-    }
-    .nav {
-        position: relative;
-    }
-    .nav ul {
-        position: absolute;
-        right: 0px;
-        top: 8vh;
-        background-color: rebeccapurple;
-        height: 92vh;
-        flex-direction: column;
-    }
-}
 
-@media only screen and (max-width: 768px) {
+/* @media only screen and (max-width: 768px) {
     nav {
         position: sticky;
     }
 
-}
+    .intro-wrapper img {
+        display: none;
+    }
+
+} */
+
 
