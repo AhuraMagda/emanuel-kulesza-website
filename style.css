@@ -63,7 +63,7 @@ nav {
 nav ul {
     display: flex;
     list-style: none;
-    width: 55%;
+    width: 35%;
     justify-content: space-around;
     margin-bottom: 0px;
 }
@@ -96,7 +96,7 @@ nav li::after {
 }
 
 nav li:hover::before, nav li:hover::after {
-    width: 100%;
+    width: 80%;
 }
 
 nav a {
@@ -466,6 +466,7 @@ h1 {
         flex-direction: column;
         text-align: center;
         transform: translate(100%);
+        transition: 1s;
     }
 
     nav a {
