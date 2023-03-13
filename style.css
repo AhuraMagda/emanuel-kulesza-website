@@ -101,28 +101,54 @@ nav li:hover::before, nav li:hover::after {
 
 nav a {
     text-decoration: none;
-    color: var(--text-light);
+    color: black;
     font-family: 'Roboto', sans-serif;
 }
 
-/* hamburger */
 
-.burger {
-    background-color: transparent;
+#toggle {
     display: none;
-    padding-right: 30px;
-    margin-top: 20px;
-    position: sticky;
-}
+  }
 
-.line {
-    width: 30px;
+.hamburger {
+    position: absolute;
+    top: 5em;
+    right: 10%;
+    margin-left: -2em;
+    margin-top: -55px;
+    width: 2em;
+    height: 45px;
+    z-index: 5;
+    display: none;
+  }
+  
+  .hamburger div {
+    position: relative;
+    width: 3em;
     height: 3px;
-    background-color: black;
-    margin: 7px;
-    border-radius: 20px;
-    transition: .3s ease-in-out;
-}
+    border-radius: 3px;
+    background-color: #000000;
+    margin-top: 11px;
+    transition: all 0.3s ease-in-out;
+  }
+
+  #toggle:checked + .hamburger .top-bun {
+    transform: rotate(-45deg) translateX(-6px) translateY(12px);
+    margin-top: 15px;
+  }
+  #toggle:checked + .hamburger .bottom-bun {
+    opacity: 0;
+    transform: rotate(45deg);
+  }
+  #toggle:checked + .hamburger .meat {
+    transform: rotate(45deg) translate(15px) translateY(9px);
+    margin-top: -7px;
+  }
+  
+  #toggle:checked + .hamburger + .nav {
+    top: 0;
+    transform: scale(1);
+  }
 
 /* INTRO section  */
 
@@ -416,28 +442,14 @@ h1 {
 }
 
 
-
 @media only screen and (max-width: 900px) {
     .about-me {
         flex-direction: column;
     }
-
-
-    .burger {
+    .hamburger {
         display: block;
-        transition: .3s ease-in-out;
     }
 
-    .burger.active .line:first-child {
-        transform: translateY(-300px);
-    }
-    .burger.active .line:nth-child(2) {
-        transform: rotate(-405deg) translateY(8px);
-    }
-
-    .burger.active .line:nth-child(3) {
-        transform: rotate(-320deg) translateY(-10px);
-    }
 
     nav {
         position: relative;
@@ -489,3 +501,5 @@ h1 {
 } */
 
 
+
+  

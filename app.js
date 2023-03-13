@@ -3,11 +3,14 @@
 const emanMainPhoto = document.getElementById("eman-main");
 const emanMainShadow = document.getElementById("eman-shadow");
 const header = document.querySelector("header");
+const navLinks = document.querySelectorAll("nav ul a")
 
 const changePositionMainPhoto = () => {
     emanMainPhoto.style.right = "80px";
     console.log('auuuu')
 }
+
+navLinks.forEach(link=>{console.log(link)})
 
 
 // Intro observer
@@ -22,8 +25,10 @@ const introPhotoObserver = new IntersectionObserver(function(entries, emanMainPh
     entries.forEach(entry => {
         if(entry.isIntersecting) {
             setTimeout(changePositionMainPhoto, 500);
+            navLinks.forEach(link=>{link.style.color = "white"})
         } else {
             emanMainPhoto.style.right = "40px";
+            navLinks.forEach(link=>{link.style.color = "black"})
         }
     })
 }, options)
@@ -32,7 +37,7 @@ introPhotoObserver.observe(header)
 
 // Hamburger mobile
 
-const burgerIcon = document.querySelector(".burger")
+const burgerIcon = document.querySelector(".hamburger")
 const mobileNav = document.querySelector("nav ul");
 
 burgerIcon.addEventListener('click', function(){
