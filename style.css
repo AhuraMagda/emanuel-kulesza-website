@@ -4,11 +4,12 @@
     box-sizing: border-box;
     margin: 0px;
     border: 0px;
+    font-family: 'Lora', serif;
 }
 
-html {
-    overflow-x: hidden;
-}
+/* html {
+    overflow: hidden;
+} */
 
 :root {
     --main-blue: #4A6873;
@@ -29,8 +30,12 @@ html {
     height: 100vh;
     overflow: scroll;
     position: relative;
+    overflow-x: hidden;
 }
 
+h2 {
+    font-family: 'Roboto', sans-serif;
+}
 
 /* NAVIGATION */
 
@@ -44,8 +49,10 @@ nav {
     top: 0px;
     z-index: 1;
     color: var(--text-light);
-    background-color: var(--main-blue);
+    background-color: transparent;
     justify-content: space-around;
+    z-index: 2;
+    position: sticky;
 }
 
 nav img {
@@ -58,6 +65,7 @@ nav ul {
     list-style: none;
     width: 55%;
     justify-content: space-around;
+    margin-bottom: 0px;
 }
 
 nav li {
@@ -94,6 +102,7 @@ nav li:hover::before, nav li:hover::after {
 nav a {
     text-decoration: none;
     color: var(--text-light);
+    font-family: 'Roboto', sans-serif;
 }
 
 /* hamburger */
@@ -125,7 +134,7 @@ header {
 }
 
 .intro-wrapper {
-    height: 92%;
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -154,6 +163,7 @@ header {
 
 h1 {
     text-align: center;
+
 }
 
 /* buttons */
@@ -214,6 +224,7 @@ h1 {
 
 .newsletter h2 {
     padding-bottom: 20px;
+
 }
 
 .newsletter > div {
@@ -293,12 +304,11 @@ h1 {
     justify-content: center;
     align-items: flex-start;
     flex-direction: column;
-    padding: 0px 70px;
+    padding: 60px 70px;
+    width: 40vh;
     background-color: white;
-    height: 30%;
-    width: 30%;
     position: relative;
-    top: 60px;
+    top: 120px;
     left: 60px;
 }
 
@@ -354,7 +364,7 @@ h1 {
     background-color: var(--main-blue);
     color: var(--text-light);
     padding: 35px 40px 19px 40px;
-    border-top: solid 12px var(--light-beige);
+
     margin-top: 60px;
     color: var(--text-light);
     display: flex;
@@ -420,13 +430,14 @@ h1 {
         position: relative;
         justify-content: space-between;
         z-index: 2;
+        position: sticky;
     }
     nav ul {
         position: absolute;
         right: 0px;
         top: 8vh;
         background-color: var(--light-beige);
-        height: 92vh;
+        height: 30vh;
         flex-direction: column;
         text-align: center;
         transform: translate(100%);
