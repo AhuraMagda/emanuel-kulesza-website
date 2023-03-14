@@ -242,15 +242,18 @@ h1 {
 
 .about-me img {
     height: 600px;
-    border-top: 30px solid white;
-    border-left: 170px solid white;
-    border-bottom: 70px solid white;
-    border-right: 40px solid white;
     margin-left: 30px;
 }
 
 .about-me p {
     color: var(--text-dark);
+    max-width: 700px;
+}
+
+@keyframes roll-out {
+    0% {width: 0%;}
+    100% {width: 100%}
+    
 }
 
 .about-me div:nth-child(2n) {
@@ -512,18 +515,6 @@ h1 {
         height: 65vh;
     }
 }
-
-
-/* @media only screen and (max-width: 768px) {
-    nav {
-        position: sticky;
-    }
-
-    .intro-wrapper img {
-        display: none;
-    }
-
-} */
 
 
 #preloader {
