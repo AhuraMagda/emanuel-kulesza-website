@@ -29,6 +29,7 @@
     position: relative;
     overflow-x: hidden;
     background-color: var(--main-blue);
+    position: relative;
 }
 
 h2 {
@@ -49,7 +50,8 @@ nav {
     background-color: transparent;
     justify-content: space-around;
     z-index: 2;
-    position: sticky;
+    position: fixed;
+    top: 0;
 }
 
 .logo {
