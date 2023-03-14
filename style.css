@@ -5,11 +5,8 @@
     margin: 0px;
     border: 0px;
     font-family: 'Lora', serif;
-}
 
-/* html {
-    overflow: hidden;
-} */
+}
 
 :root {
     --main-blue: #4A6873;
@@ -31,6 +28,7 @@
     overflow: scroll;
     position: relative;
     overflow-x: hidden;
+    background-color: var(--main-blue);
 }
 
 h2 {
@@ -47,7 +45,6 @@ nav {
     align-items: center;
     position: relative;
     top: 0px;
-    z-index: 1;
     color: var(--text-light);
     background-color: transparent;
     justify-content: space-around;
