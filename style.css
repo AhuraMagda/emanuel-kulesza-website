@@ -188,6 +188,29 @@ h1 {
 
 }
 
+.magic {
+    background: linear-gradient(
+        to right,
+        var(--text-light),
+        var(--text-light),
+        var(--text-light),
+        var(--dark-beige),
+        var(--text-light)
+    );
+    background-size: 200%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    white-space: nowrap;
+}
+
+@keyframes background-pan {
+    from {background-position: 0% center;
+    }
+    to {
+        background-position: -200% center;
+    }
+}
+
 /* buttons */
 .myButton {
     padding: 15px;
