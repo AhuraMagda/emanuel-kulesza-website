@@ -53,7 +53,7 @@ nav {
 }
 
 .logo {
-    height: 50px;
+    height: 60px;
     margin-top: 20px;
 }
 
@@ -118,33 +118,35 @@ nav a {
     display: none;
   }
   
-  .hamburger div {
+.hamburger div {
     position: relative;
     width: 3em;
     height: 3px;
     border-radius: 3px;
-    background-color: #000000;
+    background-color: #c6a389;
     margin-top: 11px;
     transition: all 0.3s ease-in-out;
-  }
+}
 
-  #toggle:checked + .hamburger .top-bun {
+#toggle:checked + .hamburger .top-bun {
     transform: rotate(-45deg) translateX(-6px) translateY(12px);
     margin-top: 15px;
-  }
-  #toggle:checked + .hamburger .bottom-bun {
+}
+
+#toggle:checked + .hamburger .bottom-bun {
     opacity: 0;
     transform: rotate(45deg);
-  }
-  #toggle:checked + .hamburger .meat {
+}
+
+#toggle:checked + .hamburger .meat {
     transform: rotate(45deg) translate(15px) translateY(9px);
     margin-top: -7px;
-  }
-  
-  #toggle:checked + .hamburger + .nav {
+}
+
+#toggle:checked + .hamburger + .nav {
     top: 0;
     transform: scale(1);
-  }
+}
 
 /* INTRO section  */
 
@@ -451,14 +453,16 @@ h1 {
 
 /* Media queries */
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 767px) {
     .intro-wrapper img {
         display: none;
     }
     .intro-wrapper {
         justify-content: center;
     }
-
+    nav ul {
+        width: 100%;
+    }
 }
 
 
