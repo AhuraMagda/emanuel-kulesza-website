@@ -102,7 +102,6 @@ nav a {
     font-family: 'Roboto', sans-serif;
 }
 
-
 #toggle {
     display: none;
   }
@@ -197,6 +196,7 @@ h1 {
     background-color: transparent;
     border: 1px solid var(--dark-beige);
     transition: .5s;
+    text-decoration: none;
 } 
 
 .myButton:hover {
