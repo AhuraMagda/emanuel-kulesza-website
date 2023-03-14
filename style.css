@@ -341,7 +341,8 @@ h1 {
 .shop {
     height: 100vh;
     background-color: white;
-    background-image: url(./images/shop-photo.jpg);
+    background-image: url(./images/shop-photo2.jpg);
+    background-position: center top;
     background-size: cover;
     color: var(--text-dark);
 }
@@ -458,8 +459,14 @@ h1 {
 
 @media only screen and (max-width: 767px) {
     .intro-wrapper img {
-        display: none;
+        left: 76px;
+        margin: 0 auto;
+        height: 40vh;
     }
+    .intro-text {
+        padding-bottom: 170px;
+    }
+
     .intro-wrapper {
         justify-content: center;
     }
@@ -476,7 +483,6 @@ h1 {
     .hamburger {
         display: block;
     }
-
 
     nav {
         position: relative;
@@ -505,7 +511,7 @@ h1 {
     }
 }
 
-@media only screen and (max-width: 1500px) {
+@media only screen and (min-width: 768px) and (max-width: 1500px) {
     .intro-wrapper {
         flex-direction: column;
     }
