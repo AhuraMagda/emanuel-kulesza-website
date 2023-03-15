@@ -520,9 +520,9 @@ h1 {
     nav ul {
         position: absolute;
         right: 0px;
-        top: 8vh;
+        top: 10vh;
         background-color: var(--light-beige);
-        height: 30vh;
+        height: 60vh;
         flex-direction: column;
         text-align: center;
         transform: translate(100%);
