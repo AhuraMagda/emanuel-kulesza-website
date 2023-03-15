@@ -496,7 +496,7 @@ h1 {
     .intro-wrapper img {
         left: 56px;
         margin: 0 auto;
-        height: 40vh;
+        height: 55vh;
     }
     .intro-text {
         padding-bottom: 170px;
@@ -511,6 +511,14 @@ h1 {
     .about-me img {
         height: 60vw;
         margin-left: 30px;
+    }
+    .newsletter > div {
+        border: 0px;
+        padding: 60px 90px;
+        outline: 0px;
+    }
+    h1 {
+        font-size: 20px;
     }
 }
 
@@ -559,12 +567,6 @@ h1 {
 
     nav ul.active {
         transform: translate(0%);
-    }
-    .newsletter > div {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 20px;
     }
 
 }
