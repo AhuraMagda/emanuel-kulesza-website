@@ -55,7 +55,9 @@ nav {
 }
 
 .logo {
-    height: 3.8rem;
+    width: 20vw;
+    max-width: 26rem;
+    min-width: 11rem;
     margin-top: 1.3rem;
 }
 
@@ -180,6 +182,7 @@ header {
 
 .intro-text {
     display: flex;
+    position: relative;
     align-items: center;
     justify-content: center;
     flex-direction: column;
@@ -190,8 +193,7 @@ header {
 
 h1 {
     text-align: center;
-    /* word-wrap:break-word;
-    white-space: normal; */
+    font-size: clamp(1.3rem, 2.5vw, 5rem);
 }
 
 .magic {
@@ -251,8 +253,8 @@ h1 {
 }
 
 .about-me img {
-    height: 50vh;
-    margin-left: 1.9rem;
+    width: 30vw;
+    min-width: 20rem;
     margin-top: 4.5rem;
 }
 
@@ -491,50 +493,23 @@ h1 {
 
 /* Media queries */
 
-@media only screen and (max-width: 767px) {
+
+
+@media only screen and (max-width: 1000px) {
+    .intro-wrapper {
+        display: block;
+    }
+
     .intro-wrapper img {
         left: 1.9rem;
         margin: 0 auto;
         height: 55vh;
     }
+
     .intro-text {
-        padding-top: 19rem;
-        align-self: flex-start;
+        padding-top: 15rem;
     }
 
-    .intro-wrapper {
-        justify-content: center;
-    }
-    nav ul {
-        width: 100%;
-    }
-    .about-me img {
-        height: 60vw;
-        margin-left: 1.9rem;
-    }
-    .newsletter > div {
-        border: 0;
-        padding: 3.8rem 2.5rem;
-        outline: 0;
-    }
-    h1 {
-        font-size: 2rem;
-        padding: 0 0.6rem;
-    }
-}
-
-@media only screen and (min-width: 768px) and (max-width: 1000px) {
-    .intro-wrapper {
-        flex-direction: column;
-    }
-    .intro-wrapper img {
-        left: 0;
-        margin: 0 auto;
-        height: 65vh;
-    }
-}
-
-@media only screen and (max-width: 1000px) {
     .about-me > div {
         flex-direction: column;
     }
@@ -572,6 +547,18 @@ h1 {
 
 }
 
+@media only screen and (max-width: 767px) {
+
+    nav ul {
+        width: 100%;
+    }
+
+    .newsletter > div {
+        border: 0;
+        padding: 3.8rem 2.5rem;
+        outline: 0;
+    }
+}
 
 #preloader {
     background: #000 url(images/preloader.gif) no-repeat center center;
