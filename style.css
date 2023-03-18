@@ -42,10 +42,10 @@ nav {
     width: 100%;
     height: 8vh;
     display: flex;
-    padding: 30px 0px 30px 40px;
+    padding: 1.9rem 0 1.9rem 2.5rem;
     align-items: center;
     position: relative;
-    top: 0px;
+    top: 0;
     color: var(--text-light);
     background-color: transparent;
     justify-content: space-around;
@@ -55,8 +55,8 @@ nav {
 }
 
 .logo {
-    height: 60px;
-    margin-top: 20px;
+    height: 3.8rem;
+    margin-top: 1.3rem;
 }
 
 nav ul {
@@ -64,12 +64,12 @@ nav ul {
     list-style: none;
     width: 35%;
     justify-content: space-around;
-    margin-bottom: 0px;
+    margin-bottom: 0;
 }
 
 nav li {
     list-style: none;
-    padding: 10px 20px;
+    padding: 0.6rem 1.3rem;
     position: relative;
     cursor: pointer;
 }
@@ -77,21 +77,21 @@ nav li {
 nav li::before, nav li::after {
     content: '';
     background-color: var(--dark-beige);
-    height: 1px;
+    height: 0.06rem;
     display: block;
     transition: width .5s;
-    width: 0px;
+    width: 0;
     position: absolute;
 }
 
 nav li::before {
-    left: 0px;
-    top: -5px;
+    left: 0;
+    top: -0.3rem;
 }
 
 nav li::after {
-    right: 0px;
-    bottom: -5px;
+    right: 0;
+    bottom: -0.3rem;
 }
 
 nav li:hover::before, nav li:hover::after {
@@ -113,9 +113,9 @@ nav a {
     top: 5em;
     right: 10%;
     margin-left: -2em;
-    margin-top: -55px;
+    margin-top: -3.5rem;
     width: 2em;
-    height: 45px;
+    height: 3rem;
     z-index: 5;
     display: none;
   }
@@ -123,16 +123,16 @@ nav a {
 .hamburger div {
     position: relative;
     width: 3em;
-    height: 3px;
-    border-radius: 3px;
+    height: 0.2rem;
+    border-radius: 0.2rem;
     background-color: #c6a389;
-    margin-top: 11px;
+    margin-top: 0.7rem;
     transition: all 0.3s ease-in-out;
 }
 
 #toggle:checked + .hamburger .top-bun {
-    transform: rotate(-45deg) translateX(-6px) translateY(12px);
-    margin-top: 15px;
+    transform: rotate(-45deg) translateX(-.4rem) translateY(.75rem);
+    margin-top: 1rem;
 }
 
 #toggle:checked + .hamburger .bottom-bun {
@@ -141,8 +141,8 @@ nav a {
 }
 
 #toggle:checked + .hamburger .meat {
-    transform: rotate(45deg) translate(15px) translateY(9px);
-    margin-top: -7px;
+    transform: rotate(45deg) translate(1rem) translateY(0.55rem);
+    margin-top: -.45rem;
 }
 
 #toggle:checked + .hamburger + .nav {
@@ -173,8 +173,8 @@ header {
     height: 50vw;
     transition: .5s;
     position: absolute;
-    right: 40px;
-    bottom: 0px;
+    right: 2.5rem;
+    bottom: 0;
 }
 
 
@@ -183,7 +183,7 @@ header {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    padding: 30px;
+    padding: 1.9rem;
     z-index: 1;
     overflow: visible;
 }
@@ -219,8 +219,8 @@ h1 {
 
 /* buttons */
 .myButton {
-    padding: 15px;
-    margin: 20px;
+    padding: 1rem;
+    margin: 1.3rem;
     color: var(--dark-beige);
     background-color: transparent;
     border: 1px solid var(--dark-beige);
@@ -252,13 +252,13 @@ h1 {
 
 .about-me img {
     height: 50vh;
-    margin-left: 30px;
-    margin-top: 70px;
+    margin-left: 1.9rem;
+    margin-top: 4.5rem;
 }
 
 .about-me p {
     color: var(--text-dark);
-    max-width: 700px;
+    max-width: 44rem;
 }
 
 
@@ -270,7 +270,7 @@ h1 {
 }
 
 .about-me div:nth-child(2n) {
-    padding: 30px 30px;
+    padding: 1.9rem;
     color: var(--text-dark);
 }
 
@@ -287,8 +287,8 @@ h1 {
 }
 
 .newsletter h2 {
-    padding-bottom: 20px;
-    font-size: 48px;
+    padding-bottom: 1.3rem;
+    font-size: 3rem;
     font-weight: 600;
     margin: 0;
     padding: 0;
@@ -296,7 +296,7 @@ h1 {
 
 .newsletter h2 + p {
     color: var(--dark-beige);
-    font-size: 28px;
+    font-size: 1.5rem;
     font-weight: 600;
 }
 
@@ -305,10 +305,10 @@ h1 {
     justify-content: center;
     flex-direction: column;
     border: 1px solid var(--light-beige);
-    padding: 60px 90px;
+    padding: 3.8rem 5.5rem;
     outline-color: var(--dark-beige);
     outline-style: solid;
-    outline-offset: 10px;
+    outline-offset: 0.6rem;
 }
 
 .newsletter form {
@@ -318,18 +318,18 @@ h1 {
 
 .newsletter-input {
     width: 100%;
-    height: 50px;
-    padding: 5px;
-    border-radius: 7px;
+    height: 3rem;
+    padding: 0.3rem;
+    border-radius: 0.45rem;
     border: 1px solid white;
     background-color: transparent;
 }
 
 
 .btn-news {
-    height: 30px;
-    width: 100px;
-    margin: 10px 0px;
+    height: 2rem;
+    width: 6.3rem;
+    margin: 0.6rem 0;
     background-color: white;
     color: rgb(0, 0, 0);
     position: relative;
@@ -338,11 +338,11 @@ h1 {
     border: 1px solid rgb(255, 255, 255);
     z-index: 1;
     transition: .5s;
-    padding: 20px;
+    padding: 1.3rem;
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 5px;
+    border-radius: 0.3rem;
     align-self: flex-end;
 }
 
@@ -387,18 +387,18 @@ h1 {
     justify-content: center;
     align-items: flex-start;
     flex-direction: column;
-    padding: 60px 70px;
+    padding: 3.8rem 4.5rem;
     width: 40vh;
     background-color: white;
     position: relative;
-    top: 120px;
-    left: 60px;
+    top: 8rem;
+    left: 4rem;
 }
 
 .btn-shop {
     color: var(--dark-beige);
     border: 1px solid var(--dark-beige);
-    margin: 0px;
+    margin: 0;
 }
 
 .btn-shop:hover {
@@ -422,8 +422,8 @@ h1 {
     border: 1px solid var(--text-dark);
     color: var(--text-dark);
     border-radius: 50%;
-    height: 120px;
-    width: 120px;
+    height: 8rem;
+    width: 8rem;
 }
 
 #btn-course:hover {
@@ -440,7 +440,7 @@ h1 {
     align-items: center;
     justify-content: center;
     background-color: white;
-    padding: 0px;
+    padding: 0;
 }
 
 
@@ -449,9 +449,9 @@ h1 {
 .contact {
     background-color: var(--main-blue);
     color: var(--text-light);
-    padding: 35px 40px 19px 40px;
+    padding: 2rem 2.5rem 1.2rem 2rem;
 
-    margin-top: 60px;
+    margin-top: 3.8rem;
     color: var(--text-light);
     display: flex;
     justify-content: center;
@@ -459,18 +459,18 @@ h1 {
 }
 
 .contact h2 {
-    padding: 30px 0px 40px 0px;
+    padding: 1.9rem 0 2.3rem 0;
 }
 
 .contact figure {
     display: flex;
     align-items: center;
-    margin-bottom: 20px;
-    font-size: 15px;
+    margin-bottom: 1.3rem;
+    font-size: 1rem;
 }
 
 .contact img {
-    height: 40px;
+    height: 2.5rem;
     margin-right: 15px;
 }
 
@@ -485,7 +485,7 @@ h1 {
 }
 
 .contact p {
-    margin: 0px;
+    margin: 0;
 }
 
 
@@ -493,12 +493,12 @@ h1 {
 
 @media only screen and (max-width: 767px) {
     .intro-wrapper img {
-        left: 30px;
+        left: 1.9rem;
         margin: 0 auto;
         height: 55vh;
     }
     .intro-text {
-        padding-top: 315px;
+        padding-top: 19rem;
         align-self: flex-start;
     }
 
@@ -510,16 +510,16 @@ h1 {
     }
     .about-me img {
         height: 60vw;
-        margin-left: 30px;
+        margin-left: 1.9rem;
     }
     .newsletter > div {
-        border: 0px;
-        padding: 60px 40px;
-        outline: 0px;
+        border: 0;
+        padding: 3.8rem 2.5rem;
+        outline: 0;
     }
     h1 {
-        font-size: 35px;
-        padding: 0px 10px
+        font-size: 2rem;
+        padding: 0 0.6rem;
     }
 }
 
@@ -548,11 +548,11 @@ h1 {
         justify-content: space-between;
         z-index: 2;
         position: sticky;
-        top: 20px;
+        top: 1.3rem;
     }
     nav ul {
         position: absolute;
-        right: 0px;
+        right: 0;
         top: 10vh;
         background-color: var(--light-beige);
         height: 60vh;
