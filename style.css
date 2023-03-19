@@ -55,7 +55,7 @@ nav {
 }
 
 .logo {
-    width: 20vw;
+    width: 68vw;
     max-width: 26rem;
     min-width: 11rem;
     margin-top: 1.3rem;
@@ -67,6 +67,10 @@ nav ul {
     width: 35%;
     justify-content: space-around;
     margin-bottom: 0;
+}
+
+nav {
+    margin-top: 1rem;
 }
 
 nav li {
