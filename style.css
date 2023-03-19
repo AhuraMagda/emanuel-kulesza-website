@@ -195,14 +195,15 @@ header {
     align-items: center;
     justify-content: center;
     position: relative;
-    max-width: 40%;
+    width: 40%;
+    max-width: 782px;
     z-index: 1;
     overflow: visible;
 }
 
 h1 {
     text-align: center;
-    font-size: clamp(1rem, 3.4vw, 2.4rem)
+    font-size: clamp(1rem, 2.7vw, 2.4rem);
 }
 
 .magic {
@@ -261,15 +262,23 @@ h1 {
     align-items: center;
 }
 
-.about-me img {
+.about-me-img {
     width: 30vw;
-    min-width: 20rem;
+    /* min-width: 20rem; */
     margin-top: 4.5rem;
+    margin-left: 1.9rem;
+}
+
+.about-me h2 {
+    font-size: 4rem;
 }
 
 .about-me p {
     color: var(--text-dark);
-    max-width: 44rem;
+    max-width: 40rem;
+    text-align: justify;
+    line-height: 1.8rem;
+    font-size: clamp(0.9rem, 2vw, 1.2rem)
 }
 
 
@@ -299,7 +308,7 @@ h1 {
 
 .newsletter h2 {
     padding-bottom: 1.3rem;
-    font-size: 3rem;
+    font-size: clamp(2rem, 5vw, 4rem);
     font-weight: 600;
     margin: 0;
     padding: 0;
@@ -307,8 +316,8 @@ h1 {
 
 .newsletter h2 + p {
     color: var(--dark-beige);
-    font-size: 1.5rem;
     font-weight: 600;
+    font-size: clamp(1rem, 2.4vw, 1.7rem);
 }
 
 .newsletter > div {
@@ -545,9 +554,6 @@ h1 {
         width: 90%;
     }
 
-    .about-me > div {
-        flex-direction: column;
-    }
 
     .hamburger {
         display: block;
@@ -580,12 +586,22 @@ h1 {
     outline: 0;
     display: block;
     }
-
+    .newsletter > div div {
+        padding: 0;
+    }
 }
+
+.about-me-img-circle {
+    height: 15rem;
+    width: 15rem;
+    display: none;
+}
+
 
 @media only screen and (max-width: 767px) {
     nav {
         padding-left: 6vw;
+        margin-top: 0;
     }
     
     nav ul {
@@ -595,6 +611,26 @@ h1 {
     .intro-img-wrapper {
         align-self: flex-end;
     }
+
+    .about-me p {
+        line-height: 1.5em;
+    }
+
+    .about-me-img {
+        display: none;
+    }
+    
+    .about-me-img-circle {
+        display: block;
+        width: 13rem;
+        height: 13rem;
+        border-radius: 50%;
+        float: right;   
+        -webkit-shape-outside: circle();
+        shape-outside: circle(50%);
+        margin: 2rem 0 1rem 1rem;
+    }
+
 }
 
 #preloader {
