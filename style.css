@@ -181,11 +181,7 @@ header {
 
 
 .intro-text {
-    display: flex;
     position: relative;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
     padding: 1.9rem;
     z-index: 1;
     overflow: visible;
@@ -501,9 +497,9 @@ h1 {
     }
 
     .intro-wrapper img {
-        left: 1.9rem;
+        left: 2.9rem;
         margin: 0 auto;
-        height: 55vh;
+        height: 45vh;
     }
 
     .intro-text {
@@ -557,6 +553,9 @@ h1 {
         border: 0;
         padding: 3.8rem 2.5rem;
         outline: 0;
+    }
+    .intro-img-wrapper {
+        align-self: flex-end;
     }
 }
 
