@@ -27,11 +27,9 @@ const introPhotoObserver = new IntersectionObserver(function(entries, introPhoto
     entries.forEach(entry => {
         if(entry.isIntersecting) {
             setTimeout(changePositionMainPhoto, 500);
-            navLinks.forEach(link=>{link.style.color = "white"})
             magic.style.animation = "background-pan 3s linear";
         } else {
             emanMainPhoto.style.right = "40px";
-            navLinks.forEach(link=>{link.style.color = "black"})
             magic.style.animation = "none";
         }
     })
@@ -97,3 +95,30 @@ const showCourseMessage = () => {
 }
 
 courseButton.addEventListener("click", showCourseMessage)
+
+
+
+// observe dark background
+
+const newsletterSection = document.querySelector(".newsletter")
+const contactSection = document.querySelector(".contact")
+
+const backgroundObserverOptions = {
+    root: null,
+    treshold: 0,
+    rootMargin: "-200px"
+}
+
+const backgroundObserver = new IntersectionObserver(function(entries, backgroundObserver) {
+    entries.forEach(entry => {
+        if(entry.isIntersecting) {
+            navLinks.forEach(link=>{link.style.color = "white"})
+        } else {
+            navLinks.forEach(link=>{link.style.color = "black"})
+        }
+    })
+}, backgroundObserverOptions)
+
+backgroundObserver.observe(newsletterSection)
+backgroundObserver.observe(contactSection)
+backgroundObserver.observe(header)

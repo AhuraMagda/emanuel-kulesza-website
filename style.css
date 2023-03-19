@@ -120,21 +120,12 @@ nav a::before {
     content: "";
     height: 1px;
     width: 16px;
-    background-color: black;
+    background-color: #c6a389;
     position: absolute;
     top: 50%;
     left: -10px;
 }
 
-/* nav a::after {
-    content: "";
-    height: 1px;
-    width: 16px;
-    background-color: rgb(0, 0, 0);
-    position: absolute;
-    top: 50%;
-    right: -10px;
-} */
 
 #toggle {
     display: none;
