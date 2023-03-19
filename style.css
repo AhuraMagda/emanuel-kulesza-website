@@ -612,9 +612,6 @@ h1 {
         align-self: flex-end;
     }
 
-    .about-me p {
-        line-height: 1.5em;
-    }
 
     .about-me-img {
         display: none;
