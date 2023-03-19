@@ -203,7 +203,7 @@ header {
 
 h1 {
     text-align: center;
-    font-size: clamp(1rem, 2.7vw, 2.4rem);
+    font-size: clamp(1.4rem, 2.7vw, 2.4rem);
 }
 
 .magic {
@@ -402,7 +402,12 @@ h1 {
 }
 
 .shop h2 {
-    color: var(--dark-beige)
+    color: var(--dark-beige);
+    font-size: 2rem;
+}
+
+.shop p {
+    padding: 1rem 0;
 }
 
 .shop div {
@@ -414,8 +419,9 @@ h1 {
     width: 40vh;
     background-color: white;
     position: relative;
-    top: 10rem;
+    top: 15rem;
     left: 4rem;
+    border-radius: 10px;
 }
 
 .btn-shop {
@@ -519,7 +525,7 @@ h1 {
     text-decoration: none;
 }
 
-.contct a:hover {
+.contact a:hover {
     text-decoration: underline;
     transition: all 0.3s;
 }
@@ -535,9 +541,9 @@ h1 {
 
 @media only screen and (max-width: 1250px) {
     .intro-text {
-        max-width: 82%;
+        max-width: 80%;
         align-self: flex-start;
-        padding-top: 20rem;
+        padding-top: 30vh;
     }
 
     .intro-wrapper {
@@ -581,13 +587,18 @@ h1 {
     }
 
     .newsletter > div {
-    border: 0;
-    padding: 3.8rem 2.5rem;
-    outline: 0;
-    display: block;
+        border: 0;
+        padding: 3.8rem 2.5rem;
+        outline: 0;
+        display: block;
     }
+
     .newsletter > div div {
-        padding: 0;
+            padding: 0;
+    }
+    .shop div {
+        left: 0.8rem;
+        width: 90%;
     }
 }
 
