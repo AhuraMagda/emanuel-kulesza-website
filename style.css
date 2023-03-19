@@ -8,6 +8,7 @@
 
 }
 
+
 :root {
     --main-blue: #4A6873;
     --light-beige: #DDD6D1;
@@ -34,6 +35,11 @@
 
 h2 {
     font-family: 'Roboto', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: var(--text-light);
 }
 
 /* NAVIGATION */
@@ -185,15 +191,19 @@ header {
 
 
 .intro-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     position: relative;
-    padding: 1.9rem;
+    max-width: 40%;
     z-index: 1;
     overflow: visible;
 }
 
 h1 {
     text-align: center;
-    font-size: clamp(1.3rem, 2.5vw, 5rem);
+    font-size: clamp(1rem, 3.4vw, 2.4rem)
 }
 
 .magic {
@@ -220,7 +230,7 @@ h1 {
 }
 
 /* buttons */
-.myButton {
+.my-button {
     padding: 1rem;
     margin: 1.3rem;
     color: var(--dark-beige);
@@ -230,7 +240,7 @@ h1 {
     text-decoration: none;
 } 
 
-.myButton:hover {
+.my-button:hover {
     background-color: var(--dark-beige);
     color: var(--main-blue);
 }
@@ -497,7 +507,7 @@ h1 {
 
 @media only screen and (max-width: 1000px) {
     .intro-wrapper {
-        display: block;
+        justify-content: center;
     }
 
     .intro-wrapper img {
@@ -507,7 +517,7 @@ h1 {
     }
 
     .intro-text {
-        padding-top: 15rem;
+        width: 90%;
     }
 
     .about-me > div {
@@ -548,7 +558,13 @@ h1 {
 }
 
 @media only screen and (max-width: 767px) {
-
+    h1 {
+        /* font-size: clamp(1rem, 1.8vh, 10rem) */
+    }
+    
+    .intro-text {
+        max-width: 82%;
+    }
     nav ul {
         width: 100%;
     }
