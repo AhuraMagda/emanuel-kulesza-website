@@ -6,14 +6,16 @@ const header = document.querySelector("header");
 const navLinks = document.querySelectorAll("nav ul a")
 const magic = document.querySelector(".magic")
 const nav = document.querySelector("nav")
+const courseButton = document.querySelector("#btn-course")
+const courseMessage = document.querySelector(".course p")
 
+
+
+// Intro observer
 const changePositionMainPhoto = () => {
     emanMainPhoto.style.right = "80px";
     console.log('auuuu')
 }
-
-
-// Intro observer
 
 const options = {
     root: null,
@@ -55,6 +57,8 @@ const instagramObserver = new IntersectionObserver(function(entries, instagramOb
             burgerIcon.classList.add('hamburger-active')
             nav.classList.add("nav-active")
         } else {
+            burgerIcon.classList.remove('hamburger-active')
+            nav.classList.remove("nav-active")
             logo.style.display = "block";   
             console.log("probably out")
         }
@@ -84,3 +88,12 @@ window.addEventListener("load", function() {
 navLinks.forEach(link=>{link.addEventListener("click", ()=>{
     mobileNav.classList.remove('active')
 })})
+
+// course button message 
+
+const showCourseMessage = () => {
+    courseButton.style.display = "none"
+    courseMessage.style.display = "block"
+}
+
+courseButton.addEventListener("click", showCourseMessage)

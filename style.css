@@ -57,13 +57,14 @@ nav {
     z-index: 2;
     position: fixed;
     top: 0;
+    margin-top: 2rem;
 }
 
 .logo {
     width: 68vw;
-    max-width: 26rem;
+    max-width: 32rem;
     min-width: 11rem;
-    margin-top: 1.3rem;
+    /* margin-top: 1.3rem; */
 }
 
 nav ul {
@@ -72,10 +73,6 @@ nav ul {
     width: 35%;
     justify-content: space-around;
     margin-bottom: 0;
-}
-
-nav {
-    margin-top: 1rem;
 }
 
 nav ul.active {
@@ -115,7 +112,6 @@ nav li:hover::before, nav li:hover::after {
 
 nav a {
     text-decoration: none;
-    color: black;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -125,7 +121,7 @@ nav a {
 
 .hamburger {
     position: absolute;
-    top: 5em;
+    top: 4em;
     right: 10%;
     margin-left: -2em;
     margin-top: -3.5rem;
@@ -318,15 +314,15 @@ h1 {
 .newsletter > div {
     display: flex;
     justify-content: center;
-    border: 1px solid var(--light-beige);
+    /* border: 1px solid var(--light-beige); */
     padding: 3.8rem 5.5rem;
-    outline-color: var(--dark-beige);
+    /* outline-color: var(--dark-beige);
     outline-style: solid;
-    outline-offset: 0.6rem;
+    outline-offset: 0.6rem; */
 }
 
 .newsletter > div div {
-    padding: 1em;
+    padding: 2em;
 }
 
 .newsletter form {
@@ -409,7 +405,7 @@ h1 {
     width: 40vh;
     background-color: white;
     position: relative;
-    top: 8rem;
+    top: 10rem;
     left: 4rem;
 }
 
@@ -449,8 +445,8 @@ h1 {
     color: var(--light-beige);
 }
 
-.hidden {
-
+.course p {
+    display: none;
 }
 
 /* INSTAGRAM section*/
@@ -471,13 +467,20 @@ h1 {
 .contact {
     background-color: var(--main-blue);
     color: var(--text-light);
-    padding: 2rem 2.5rem 1.2rem 2rem;
-
     margin-top: 3.8rem;
     color: var(--text-light);
     display: flex;
+    align-items: center;
     justify-content: center;
-    flex-direction: column;
+}
+
+.contact-background {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #44606a;
+    width: 100%;
+    padding: 1rem 0;
 }
 
 .contact h2 {
@@ -494,6 +497,12 @@ h1 {
 .contact img {
     height: 2.5rem;
     margin-right: 15px;
+}
+
+
+#contact-photo {
+    height: 300px;
+    padding-left: 6rem;
 }
 
 .contact a {
@@ -559,7 +568,6 @@ h1 {
         flex-direction: column;
         text-align: center;
         transform: translate(100%);
-        transition: 1s;
     }
 
     nav a {
@@ -576,6 +584,10 @@ h1 {
 }
 
 @media only screen and (max-width: 767px) {
+    nav {
+        padding-left: 6vw;
+    }
+    
     nav ul {
         width: 100%;
     }
@@ -620,5 +632,4 @@ h1 {
     flex-direction: column;
     text-align: center;
     transform: translate(100%);
-    transition: 1s;
 }
