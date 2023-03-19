@@ -12,8 +12,6 @@ const changePositionMainPhoto = () => {
     console.log('auuuu')
 }
 
-navLinks.forEach(link=>{console.log(link)})
-
 
 // Intro observer
 
@@ -81,3 +79,8 @@ const loader = document.querySelector("#preloader");
 window.addEventListener("load", function() {
     loader.style.display = "none";
 })
+
+// nav hidding after click
+navLinks.forEach(link=>{link.addEventListener("click", ()=>{
+    mobileNav.classList.remove('active')
+})})
