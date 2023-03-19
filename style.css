@@ -560,6 +560,7 @@ h1 {
         max-width: 80%;
         align-self: flex-start;
         padding-top: 30vh;
+        width: 90%;
     }
 
     .intro-wrapper {
@@ -571,11 +572,6 @@ h1 {
         margin: 0 auto;
         height: 45vh;
     }
-
-    .intro-text {
-        width: 90%;
-    }
-
 
     .hamburger {
         display: block;
@@ -629,6 +625,10 @@ h1 {
 
 
 @media only screen and (max-width: 767px) {
+    .intro-text {
+        padding-top: 20vh;
+    }
+    
     nav {
         padding-left: 6vw;
         margin-top: 0;
@@ -642,6 +642,10 @@ h1 {
         align-self: flex-end;
     }
 
+    .intro-wrapper img {
+        left: 0.5rem;
+        margin: 0 auto;
+    }
 
     .about-me-img {
         display: none;
