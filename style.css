@@ -531,8 +531,7 @@ h1 {
     nav {
         position: relative;
         justify-content: space-between;
-        z-index: 2;
-        position: sticky;
+        position: fixed;
         top: 1.3rem;
     }
     nav ul {
@@ -564,6 +563,8 @@ h1 {
     
     .intro-text {
         max-width: 82%;
+        align-self: flex-start;
+        padding-top: 20rem;
     }
     nav ul {
         width: 100%;
