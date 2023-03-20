@@ -19,8 +19,8 @@ const changePositionMainPhoto = () => {
 
 const options = {
     root: null,
-    treshold: 0,
-    rootMargin: "-200px"
+    treshold: 1,
+    rootMargin: "-100px"
 }
 
 const introPhotoObserver = new IntersectionObserver(function(entries, introPhotoObserver) {
@@ -43,8 +43,8 @@ const logo = document.querySelector(".logo")
 
 const instaObserverOptions = {
     root: null,
-    treshold: 0,
-    rootMargin: "-200px"
+    treshold: 1,
+    rootMargin: "-100px"
 }
 
 const instagramObserver = new IntersectionObserver(function(entries, instagramObserver) {
@@ -106,7 +106,7 @@ const contactSection = document.querySelector(".contact")
 const backgroundObserverOptions = {
     root: null,
     treshold: 0,
-    rootMargin: "-200px"
+    rootMargin: "200px"
 }
 
 const backgroundObserver = new IntersectionObserver(function(entries, backgroundObserver) {
