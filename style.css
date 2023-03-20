@@ -290,7 +290,7 @@ h1 {
     max-width: 40rem;
     text-align: justify;
     line-height: 1.8rem;
-    font-size: clamp(0.9rem, 2vw, 1.2rem)
+    font-size: clamp(0.8rem, 2vw, 1.2rem)
 }
 
 
@@ -663,6 +663,14 @@ h1 {
     }
 
 }
+
+@media only screen and (max-width: 767px) and (max-height: 920px) {
+    .about-me p {
+        line-height: 1.3rem;;
+    }
+}
+
+
 
 #preloader {
     background: #000 url(images/preloader.gif) no-repeat center center;
