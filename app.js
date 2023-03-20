@@ -106,15 +106,17 @@ const contactSection = document.querySelector(".contact")
 const backgroundObserverOptions = {
     root: null,
     treshold: 0,
-    rootMargin: "200px"
+    rootMargin: "-200px"
 }
 
 const backgroundObserver = new IntersectionObserver(function(entries, backgroundObserver) {
     entries.forEach(entry => {
         if(entry.isIntersecting) {
             navLinks.forEach(link=>{link.style.color = "white"})
+            console.log("white")
         } else {
             navLinks.forEach(link=>{link.style.color = "black"})
+            console.log("black")
         }
     })
 }, backgroundObserverOptions)
