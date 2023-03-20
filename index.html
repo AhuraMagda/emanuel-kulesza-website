@@ -17,10 +17,10 @@
 <body>
     <div id="preloader"></div>
 
-    <div class="wrapper">
+    <div class="page-wrapper">
 
         <nav>
-            <img class="logo" src="./images/logo-light.png" alt="">
+            <img class="logo" src="./images/logo-light.png" alt="logo Emanuel Kulesza">
             <ul>
                 <li><a href='#about-me'>BIO</a></li>
                 <li><a href='#newsletter'>Newsletter</a></li>
@@ -32,35 +32,37 @@
 
             <input id="toggle" type="checkbox"></input>
             <label for="toggle" class="hamburger">
-            <div class="top-bun"></div>
-            <div class="meat"></div>
-            <div class="bottom-bun"></div>
+                <div class="top-bun"></div>
+                <div class="meat"></div>
+                <div class="bottom-bun"></div>
             </label>
-
         </nav>
-        <header class="snap">
+
+        <header class="scroll-snap">
             <div class="intro-wrapper">
                 <div class="intro-text-wrapper">
                     <div class="intro-text">
                         <h1 class="magic">Moje największe dokonania powstały za pomocą myśli oraz uważnej analizy potrzeb klienta, przeanalizuj ze mną swoją sytuację i&nbsp;popraw skuteczność w&nbsp;biznesie i&nbsp;życiu.</h1>
-                        <button class="my-button"><a href="https://sklep.emanuelkulesza.pl/" target="_blank" >Nawiąż współpracę</a></button>
+                        <button class="main-button"><a href="https://sklep.emanuelkulesza.pl/" target="_blank" >Nawiąż współpracę</a></button>
                     </div>
                 </div>
+
                 <div class="intro-img-wrapper"> 
-                    <img id="eman-shadow" src="./images/emancut2.png" alt="">
-                    <img id="eman-main" src="./images/emancut.png" alt="">
+                    <img id="eman-shadow" src="./images/emancut2.png" alt="tło zdjęcia">
+                    <img id="eman-main" src="./images/emancut.png" alt="zdjęcie Emanuela Kulreszy">
                 </div>
             </div>
         </header>
 
     
-        <section id="about-me" class="about-me snap">
+        <section id="about-me" class="about-me scroll-snap">
             <div>
                 <div>
-                    <img class="about-me-img" src="./images/eman3.jpg" alt="">
+                    <img class="about-me-img-big" src="./images/eman.jpg" alt="zdjęcie Emanuela Kuleszy">
                 </div>
-                <div>
-                    <img class="about-me-img-circle" src="./images/eman-square.jpg" alt="">
+
+                <div class="about-me-text-wrapper">
+                    <img class="about-me-img-circle" src="./images/eman-square.jpg" alt="zdjęcie Emanuela Kuleszy">
                     <h2>BIO</h2>
                     <p>Emanuel Kulesza przedsiębiorca, który z&nbsp;pasją zbudował w&nbsp;swojej 
                         karierze kilkanaście firm działający w branży
@@ -78,14 +80,13 @@
                         doradztwa dla firm i&nbsp;kadr zarządzających, wspiera on
                         również młodych przedsiębiorców i doradza osobą na
                         początku swojej drogi, tak aby zminimalizować
-                        
                         niepowodzenie klienta.</p>   
                 </div>
             </div>
         </section>
     
-        <section id="newsletter" class="newsletter snap">
-            <div>
+        <section id="newsletter" class="newsletter scroll-snap">
+            <div class="newsletter-wrapper">
                 <div>
                     <h2>PIERWSZY KROK<br>DO SUKCESU,</h2>
                     <p>nic cię nie kosztuje.</p>
@@ -105,28 +106,28 @@
         </section>
     
     
-        <section id="shop" class="shop snap">
+        <section id="shop" class="shop scroll-snap">
             <div>
                 <h2>Sklep</h2>
                 <p>Wszystkie moje produkty
                     i usługi możesz zakupić 
                     wyłącznie w moim sklepie.</p>
-                <button onclick="window.open('https://sklep.emanuelkulesza.pl/', '_blank')" class="my-button btn-shop">Sprawdź ofertę</button>
+                <button onclick="window.open('https://sklep.emanuelkulesza.pl/', '_blank')" class="main-button btn-shop">Sprawdź ofertę</button>
             </div>
         </section>
     
-        <section id="course" class="course snap">
+        <section id="course" class="course scroll-snap">
             <h2>Strefa kursu</h2>
-            <button class="my-button" id="btn-course">Zaloguj</button>
+            <button class="main-button" id="btn-course">Zaloguj</button>
             <p>Obecnie nasz zespół pracuje nad kursami dla ciebie.</p>
         </section>
     
     
-        <section id="instagram" class="instagram snap">
+        <section id="instagram" class="instagram scroll-snap">
             <div class="elfsight-app-f6c3b464-3759-44b1-b01f-27a6de686c74"></div>
         </section>
     
-        <section id="contact" class="contact snap">
+        <section id="contact" class="contact scroll-snap">
             <div class="contact-background">
                 <div>
                     <h2>Kontakt</h2>
@@ -147,7 +148,7 @@
                         </figcaption>
                     </figure>
                 </div>
-                <img class="contact-photo" src="./images/contact-photo-square.jpg" alt="">
+                <img class="contact-photo" src="./images/contact-photo-square.jpg" alt="zdjęcie Emanuela Kuleszy">
             </div>
             <footer>
                 <p>Copyright @ 2023 Emanuel Kulesza</p>
