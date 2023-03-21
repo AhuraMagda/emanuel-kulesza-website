@@ -431,6 +431,11 @@ h1 {
     width: 100%;
 }
 
+.newsletter a:hover {
+    text-decoration: underline;
+    color: white;
+}
+
 
 /* SHOP section */
 
@@ -523,14 +528,6 @@ h1 {
     padding: 0;
 }
 
-.instagram > span {
-    height: 90vh;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
 
 /* CONTACT section*/
 
@@ -575,10 +572,7 @@ h1 {
     padding-left: 6rem;
 }
 
-.contact a:hover {
-    text-decoration: underline;
-    color: white;
-}
+
 
 
 /* footer */
