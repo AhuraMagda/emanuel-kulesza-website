@@ -122,5 +122,4 @@ const backgroundObserver = new IntersectionObserver(function(entries, background
 }, backgroundObserverOptions)
 
 backgroundObserver.observe(newsletterSection)
-backgroundObserver.observe(contactSection)
 backgroundObserver.observe(header)
