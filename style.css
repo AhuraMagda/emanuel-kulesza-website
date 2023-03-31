@@ -140,35 +140,6 @@ nav a::before {
     left: -10px;
 }
 
-
-/* NAV active */
-
-nav ul.active {
-    transform: translate(0%);
-}
-
-.hamburger-active {
-    display: block;
-}
-
-.nav-active {
-    position: relative;
-    justify-content: space-between;
-    position: fixed;
-    top: 1.3rem;
-}
-.nav-active ul {
-    position: absolute;
-    right: 0;
-    top: 10vh;
-    background-color: var(--light-beige);
-    height: 60vh;
-    flex-direction: column;
-    text-align: center;
-    transform: translate(100%);
-}
-
-
 /* NAVIGATION Hamburger */
 
 #toggle {
@@ -215,6 +186,34 @@ nav ul.active {
 #toggle:checked + .hamburger + .nav {
     top: 0;
     transform: scale(1);
+}
+
+
+/* NAV active */
+
+nav ul.active {
+    transform: translate(0%);
+}
+
+.hamburger-active {
+    display: block;
+}
+
+.nav-active {
+    position: relative;
+    justify-content: space-between;
+    position: fixed;
+    top: 1.3rem;
+}
+.nav-active ul {
+    position: absolute;
+    right: 0;
+    top: 10vh;
+    background-color: var(--light-beige);
+    height: 60vh;
+    flex-direction: column;
+    text-align: center;
+    transform: translate(100%);
 }
 
 
