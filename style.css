@@ -388,6 +388,11 @@ h1 {
     border-radius: 0.45rem;
     border: 1px solid white;
     background-color: transparent;
+    color: white;
+}
+
+.newsletter-input::placeholder {
+    color: var(--dark-beige)
 }
 
 .btn-news {
