@@ -100,12 +100,17 @@ nav ul {
 
 nav li {
     list-style: none;
-    padding: 0.6rem 1.3rem;
+    /* padding: 0.6rem 1.3rem; */
     position: relative;
     cursor: pointer;
 }
 
-nav li::before, nav li::after {
+nav a {
+    position: relative;
+    padding: 0.6rem 1.3rem;
+}
+
+nav a::before, nav a::after {
     content: '';
     background-color: var(--dark-beige);
     height: 0.06rem;
@@ -115,22 +120,23 @@ nav li::before, nav li::after {
     position: absolute;
 }
 
-nav li::before {
+nav a::before {
     left: 0;
     top: -0.3rem;
 }
 
-nav li::after {
+nav a::after {
     right: 0;
     bottom: -0.3rem;
 }
 
-nav li:hover::before, nav li:hover::after {
+nav a:hover::before, nav a:hover::after {
     width: 100%;
 }
 
 
-nav a::before {
+
+nav li::before {
     content: "";
     height: 1px;
     width: 16px;
