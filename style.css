@@ -27,7 +27,6 @@
     height: 100vh;
     overflow-x: hidden;
     overflow-y: scroll;
-    overflow: scroll;
     position: relative;
     scroll-snap-type: y mandatory;
 }
@@ -75,7 +74,6 @@ nav {
     margin-top: 2rem;
     padding: 1.9rem 0 1.9rem 0;
     position: fixed;
-    /* position: relative; */
     top: 0;
     width: 100%;
     z-index: 2;
@@ -204,7 +202,6 @@ nav ul.active {
 .nav-active {
     justify-content: space-between;
     position: fixed;
-    position: relative;
     top: 1.3rem;
 }
 .nav-active ul {
@@ -223,7 +220,6 @@ nav ul.active {
 
 header {
     height: 100vh;
-    width: 100vw;
     color: var(--text-light);
     background-color: var(--main-blue);
 }
@@ -630,7 +626,6 @@ footer a {
     nav {
         justify-content: space-between;
         position: fixed;
-        position: relative;
         top: 1.3rem;
     }
     nav ul {
