@@ -1,5 +1,4 @@
 
-// --animacja u góry--
 const emanMainPhoto = document.getElementById("eman-main");
 const emanMainShadow = document.getElementById("eman-shadow");
 const header = document.querySelector("header");
@@ -10,11 +9,9 @@ const courseButton = document.querySelector("#btn-course")
 const courseMessage = document.querySelector(".course p")
 
 
-
-// Intro observer
+// intro observer - move photo, animate text
 const changePositionMainPhoto = () => {
     emanMainPhoto.style.right = "80px";
-    console.log('auuuu')
 }
 
 const options = {
@@ -37,7 +34,8 @@ const introPhotoObserver = new IntersectionObserver(function(entries, introPhoto
 
 introPhotoObserver.observe(header)
 
-// Instagram observer
+
+// instagram observer - change to hamburger
 const instagramSection = document.querySelector(".instagram")
 const logo = document.querySelector(".logo")
 
@@ -51,21 +49,20 @@ const instagramObserver = new IntersectionObserver(function(entries, instagramOb
     entries.forEach(entry => {
         if(entry.isIntersecting) {
             logo.style.display = "none";
-            console.log("here")
             burgerIcon.classList.add('hamburger-active')
             nav.classList.add("nav-active")
         } else {
             burgerIcon.classList.remove('hamburger-active')
             nav.classList.remove("nav-active")
             logo.style.display = "block";   
-            console.log("probably out")
         }
     })
 }, instaObserverOptions)
 
 instagramObserver.observe(instagramSection)
 
-// Hamburger mobile
+
+// hamburger mobile
 
 const burgerIcon = document.querySelector(".hamburger")
 const mobileNav = document.querySelector("nav ul");
@@ -82,10 +79,13 @@ window.addEventListener("load", function() {
     loader.style.display = "none";
 })
 
+
 // nav hidding after click
+
 navLinks.forEach(link=>{link.addEventListener("click", ()=>{
     mobileNav.classList.remove('active')
 })})
+
 
 // course button message 
 
@@ -95,7 +95,6 @@ const showCourseMessage = () => {
 }
 
 courseButton.addEventListener("click", showCourseMessage)
-
 
 
 // observe dark background
@@ -113,10 +112,8 @@ const backgroundObserver = new IntersectionObserver(function(entries, background
     entries.forEach(entry => {
         if(entry.isIntersecting) {
             navLinks.forEach(link=>{link.style.color = "white"})
-            console.log("white")
         } else {
             navLinks.forEach(link=>{link.style.color = "black"})
-            console.log("black")
         }
     })
 }, backgroundObserverOptions)
