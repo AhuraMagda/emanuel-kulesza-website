@@ -453,17 +453,17 @@ h1 {
 }
 
 .shop-container {
+    background-color: rgba(255, 255, 255, 0.8);
     display: flex;
 }
 
 .shop-container div {
-    background-color: rgba(255, 255, 255, 0.8);
-    padding: 70px;
-    max-width: 400px;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
     align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 400px;
+    padding: 70px;
 }
 
 .shop p {
@@ -476,8 +476,8 @@ h1 {
 }
 
 .btn-shop {
-    color: black;
     border: 1px solid var(--dark-beige);
+    color: black;
     margin: 0;
 }
 
@@ -696,20 +696,21 @@ footer a {
         display: block;
         float: right;   
         height: 13rem;
-        margin: 2rem 0 1rem 1rem;
+        margin: 32px 0 16px 16px;
         shape-outside: circle(50%);
         width: 13rem;
     }
     .shop-container {
         flex-direction: column;
+        padding: 10px 0px;
     }
 
     .shop-container div {
-        padding: 10px;
+        padding: 0px;
     }
 
     .shop-img {
-        height: 200px;
+        height: 150px;
     }
 
 }
