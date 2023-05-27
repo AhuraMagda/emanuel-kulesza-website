@@ -26,7 +26,7 @@
     
         $mail->setFrom($email, 'Kurs'); // sender's email and name
         $mail->AddReplyTo($email, $name);
-        $mail->addAddress('lubaszka.magda@gmail.com', "Emanuel Kulesza");  // receiver's email and name
+        $mail->addAddress('********@gmail.com', "Name");  // receiver's email and name
     
         $mail->Subject = $subject;
         $mail->Body    = $message;
