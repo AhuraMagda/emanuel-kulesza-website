@@ -20,9 +20,11 @@ This is a personal website made for Emanuel Kulesza.
 - CSS custom properties
 - Flexbox
 - JavaScript
+- PHP
 
 ### Useful resources
 - [Elfsight](https://elfsight.com/) - instagram widget
+- PHPMailer
 
 ## Author
 - Github (https://github.com/AhuraMagda)
