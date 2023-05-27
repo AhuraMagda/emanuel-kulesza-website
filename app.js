@@ -87,16 +87,6 @@ navLinks.forEach(link=>{link.addEventListener("click", ()=>{
 })})
 
 
-// course button message 
-
-const showCourseMessage = () => {
-    courseButton.style.display = "none"
-    courseMessage.style.display = "block"
-}
-
-courseButton.addEventListener("click", showCourseMessage)
-
-
 // observe dark background
 
 const newsletterSection = document.querySelector(".newsletter")

@@ -104,8 +104,26 @@
     
         <section id="course" class="course scroll-snap">
             <h2>Strefa kursu</h2>
-            <button class="main-button" id="btn-course">Zaloguj</button>
-            <p>Obecnie nasz zespół pracuje nad kursami dla ciebie.</p>
+                <form class="course-form" action="send-email.php" method="POST">
+                    <label for="course-form--type"><h3>Wybierz temat kursu dla siebie</h3></label> 
+                    <select id="course-form--type" name="course-form--type">
+                        <option value="Liderowanie i budowanie zespołu">Liderowanie i budowanie zespołu</option>
+                        <option value="Zarządzanie zmianą">Zarządzanie zmianą</option>
+                        <option value="Umiejętności negocjacyjne i konfliktowe">Umiejętności negocjacyjne i konfliktowe</option>
+                        <option value="Zarządzanie czasem i priorytetami">Zarządzanie czasem i priorytetami</option>
+                        <option value="Zarządzanie różnorodnością i inkluzją">Zarządzanie różnorodnością i inkluzją</option>
+                    </select>
+                    <h4>Opis: </h4>
+                    <p id="opis-1">To szkolenie skupia się na umiejętnościach przywódczych i technikach zarządzania, które pomogą kadrze zarządzającej stać się skutecznymi liderami. Tematyka może obejmować budowanie zaufania, motywowanie pracowników, delegowanie zadań, rozwiązywanie konfliktów i budowanie efektywnego zespołu.</p>
+                    <p id="opis-2">Szkolenie dotyczące zarządzania zmianą ma na celu przygotowanie kadry zarządzającej do skutecznego wprowadzania i zarządzania zmianami w organizacji. Tematyka może obejmować strategie komunikacji, zarządzanie oporem, identyfikację i minimalizację ryzyka oraz budowanie elastyczności organizacyjnej.</p>
+                    <p id="opis-3">To szkolenie koncentruje się na rozwijaniu umiejętności negocjacyjnych i rozwiązywaniu konfliktów. Tematyka może obejmować techniki negocjacyjne, umiejętność słuchania, radzenie sobie z trudnymi sytuacjami, mediację i budowanie pozytywnych relacji w organizacji.</p>
+                    <p id="opis-4">Szkolenie skierowane na rozwijanie umiejętności skutecznego zarządzania czasem i priorytetami. Tematyka może obejmować planowanie czasu, priorytetyzację zadań, eliminowanie marnowania czasu, delegowanie i efektywne wykorzystanie narzędzi do zarządzania czasem.</p>
+                    <p id="opis-5">Szkolenie skupione na budowaniu umiejętności zarządzania różnorodnym zespołem i tworzeniu kultury organizacyjnej opartej na inkluzji. Tematyka może obejmować świadomość różnorodności, techniki rekrutacji i utrzymania różnorodnego personelu, tworzenie równych szans, eliminowanie uprzedzeń i tworzenie inkluzywnych procesów decyzyjnych.</p>
+                    <h4>Zapisz się, a ja skontaktuję się z tobą w celu ustalenia szczegółów.</h4>
+                    <label for="course-form--name">Name</label><input type=text id="course-form--name" name="course-form--name">
+                    <label for="course-form--email">Email</label><input type=text id="course-form--email" name="course-form--email">
+                    <button class="btn-news" type="submit">zapisz</button>
+                </form>
         </section>
     
     

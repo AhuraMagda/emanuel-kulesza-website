@@ -502,10 +502,6 @@ h1 {
     font-size: clamp(1rem, 9vw, 3rem);
 }
 
-.course p {
-    display: none;
-}
-
 #btn-course {
     border-radius: 50%;
     border: 1px solid var(--text-dark);
@@ -517,6 +513,26 @@ h1 {
 #btn-course:hover {
     background-color: var(--text-dark);
     color: var(--light-beige);
+}
+
+.course form {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    border-radius: 10px;
+}
+
+.course select {
+    width: fit-content;
+    padding: 10px;
+}
+
+.course input {
+    width: 300px;
+}
+
+#opis-2, #opis-3, #opis-4, #opis-5 {
+    display: none;
 }
 
 
@@ -738,3 +754,7 @@ footer a {
     width: 100%;
     z-index: 999;
 }
+
+
+
+
