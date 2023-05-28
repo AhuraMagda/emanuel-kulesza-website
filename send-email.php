@@ -19,14 +19,14 @@
         $mail->isSMTP(); // using SMTP protocol                                     
         $mail->Host = 'smtp.gmail.com'; // SMTP host as gmail 
         $mail->SMTPAuth = true;  // enable smtp authentication                             
-        $mail->Username = 'goya.lovelace@gmail.com';  // sender gmail host              
-        $mail->Password = 'kfhelypymjkyxlut'; // sender gmail host password                          
+        $mail->Username = '************';  // sender gmail host              
+        $mail->Password = '**************'; // sender gmail host password                          
         $mail->SMTPSecure = 'tls';  // for encrypted connection                           
         $mail->Port = 587;   // port for SMTP     
     
         $mail->setFrom($email, 'Kurs'); // sender's email and name
         $mail->AddReplyTo($email, $name);
-        $mail->addAddress('lubaszka.magda@gmail.com', "Emanuel Kulesza");  // receiver's email and name
+        $mail->addAddress('********@gmail.com', "Name");  // receiver's email and name
     
         $mail->Subject = $subject;
         $mail->Body    = $message;
