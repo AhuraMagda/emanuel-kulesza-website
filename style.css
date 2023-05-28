@@ -500,7 +500,13 @@ h1 {
 
 .course h2 {
     font-size: clamp(1rem, 9vw, 3rem);
+    padding-bottom: 20px;
 }
+
+.course h3 {
+    font-size: 1.5rem;
+}
+
 
 #btn-course {
     border-radius: 50%;
@@ -519,19 +525,29 @@ h1 {
     display: flex;
     flex-direction: column;
     width: 70%;
+    max-width: 550px;
     border-radius: 10px;
 }
 
 .course select {
     width: fit-content;
     padding: 10px;
+    margin: 20px 0px;
+    border-radius: 10px;
 }
 
 .course input {
     width: 300px;
+    background-color: transparent;
+    border-radius: 7.2px;
+    border: 1px solid white;
+    color: black;
+    height: 48px;
+    padding: 10px;
+    margin: 5px 0px;
 }
 
-#opis-2, #opis-3, #opis-4, #opis-5 {
+#course-des-2, #course-des-3, #course-des-4, #course-des-5 {
     display: none;
 }
 
@@ -589,6 +605,10 @@ h1 {
 .contact-photo {
     height: 100%;
     padding-left: 96px;
+}
+
+.course .newsletter-input::placeholder {
+    color: white;
 }
 
 

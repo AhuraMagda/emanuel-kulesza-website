@@ -110,3 +110,43 @@ const backgroundObserver = new IntersectionObserver(function(entries, background
 
 backgroundObserver.observe(newsletterSection)
 backgroundObserver.observe(header)
+
+
+// change description in course part after selecting the course
+
+let courseTitle = document.querySelector("#course-form--type");
+const courseDes1 = document.querySelector("#course-des-1");
+const courseDes2 = document.querySelector("#course-des-2");
+const courseDes3 = document.querySelector("#course-des-3");
+const courseDes4 = document.querySelector("#course-des-4");
+const courseDes5 = document.querySelector("#course-des-5");
+
+let activeDes = courseDes1;
+
+const changeDescription = () => {
+    console.log(courseTitle.value)
+    if(courseTitle.value === "Liderowanie i budowanie zespołu") {
+        activeDes.style.display = "none";
+        courseDes1.style.display = "block";
+        activeDes = courseDes1;
+    } else if(courseTitle.value === "Zarządzanie zmianą") {
+        activeDes.style.display = "none";
+        courseDes2.style.display = "block";
+        activeDes = courseDes2;
+    } else if(courseTitle.value === "Umiejętności negocjacyjne i konfliktowe") {
+        activeDes.style.display = "none";
+        courseDes3.style.display = "block";
+        activeDes = courseDes3;
+    } else if(courseTitle.value === "Zarządzanie czasem i priorytetami") {
+        activeDes.style.display = "none";
+        courseDes4.style.display = "block";
+        activeDes = courseDes4;
+    } else if(courseTitle.value === "Zarządzanie różnorodnością i inkluzją") {
+        activeDes.style.display = "none";
+        courseDes5.style.display = "block";
+        activeDes = courseDes5;
+    }
+}
+
+
+courseTitle.addEventListener("click", changeDescription)
