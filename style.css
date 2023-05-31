@@ -338,6 +338,131 @@ h1 {
 }
 
 
+
+/* SHOP section */
+
+.shop {
+    align-items: center;
+    background-image: url(./images/shop-photo.jpg);
+    background-position: center top;
+    background-size: cover;
+    color: var(--text-dark);
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+}
+
+.shop-container {
+    background-color: rgba(255, 255, 255, 0.8);
+    display: flex;
+}
+
+.shop-container div {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 400px;
+    padding: 70px;
+}
+
+.shop p {
+    text-align: center;
+    padding: 20px 0px;
+}
+
+.shop-img {
+    height: 300px;
+}
+
+.btn-shop {
+    border: 1px solid var(--dark-beige);
+    color: black;
+    margin: 0;
+}
+
+.btn-shop:hover {
+    background-color: var(--dark-beige);
+    color: black;
+}
+
+
+/* COURSE section*/
+
+.course {
+    align-items: center;
+    background-color: var(--dark-beige);
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+}
+
+.course h2 {
+    font-size: clamp(1rem, 9vw, 3rem);
+    padding-bottom: 20px;
+}
+
+.course h3 {
+    font-size: 1.5rem;
+}
+
+
+#btn-course {
+    border-radius: 50%;
+    border: 1px solid var(--text-dark);
+    color: var(--text-dark);
+    height: 128px;
+    width: 128px;
+}
+
+#btn-course:hover {
+    background-color: var(--text-dark);
+    color: var(--light-beige);
+}
+
+.course form {
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    max-width: 550px;
+    width: 70%;
+}
+
+.course select {
+    border-radius: 10px;
+    margin: 20px 0px;
+    padding: 10px;
+    max-width: fit-content;
+}
+
+.course input {
+    background-color: transparent;
+    border-radius: 7.2px;
+    border: 1px solid white;
+    color: black;
+    height: 48px;
+    margin: 5px 0px;
+    padding: 10px;
+    max-width: 300px;
+}
+
+#course-des-2, #course-des-3, #course-des-4, #course-des-5 {
+    display: none;
+}
+
+
+/* INSTAGRAM section*/
+
+.instagram {
+    align-items: center;
+    background-color: white;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    padding: 0;
+}
+
 /* NEWSLETTER section*/
 
 .newsletter {
@@ -439,180 +564,7 @@ h1 {
 }
 
 
-/* SHOP section */
-
-.shop {
-    align-items: center;
-    background-image: url(./images/shop-photo.jpg);
-    background-position: center top;
-    background-size: cover;
-    color: var(--text-dark);
-    display: flex;
-    height: 100vh;
-    justify-content: center;
-}
-
-.shop-container {
-    background-color: rgba(255, 255, 255, 0.8);
-    display: flex;
-}
-
-.shop-container div {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    max-width: 400px;
-    padding: 70px;
-}
-
-.shop p {
-    text-align: center;
-    padding: 20px 0px;
-}
-
-.shop-img {
-    height: 300px;
-}
-
-.btn-shop {
-    border: 1px solid var(--dark-beige);
-    color: black;
-    margin: 0;
-}
-
-.btn-shop:hover {
-    background-color: var(--dark-beige);
-    color: black;
-}
-
-
-/* COURSE section*/
-
-.course {
-    align-items: center;
-    background-color: var(--dark-beige);
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
-    justify-content: center;
-}
-
-.course h2 {
-    font-size: clamp(1rem, 9vw, 3rem);
-    padding-bottom: 20px;
-}
-
-.course h3 {
-    font-size: 1.5rem;
-}
-
-
-#btn-course {
-    border-radius: 50%;
-    border: 1px solid var(--text-dark);
-    color: var(--text-dark);
-    height: 128px;
-    width: 128px;
-}
-
-#btn-course:hover {
-    background-color: var(--text-dark);
-    color: var(--light-beige);
-}
-
-.course form {
-    display: flex;
-    flex-direction: column;
-    width: 70%;
-    max-width: 550px;
-    border-radius: 10px;
-}
-
-.course select {
-    width: fit-content;
-    padding: 10px;
-    margin: 20px 0px;
-    border-radius: 10px;
-}
-
-.course input {
-    width: 300px;
-    background-color: transparent;
-    border-radius: 7.2px;
-    border: 1px solid white;
-    color: black;
-    height: 48px;
-    padding: 10px;
-    margin: 5px 0px;
-}
-
-#course-des-2, #course-des-3, #course-des-4, #course-des-5 {
-    display: none;
-}
-
-
-/* INSTAGRAM section*/
-
-.instagram {
-    align-items: center;
-    background-color: white;
-    display: flex;
-    height: 100vh;
-    justify-content: center;
-    padding: 0;
-}
-
-
-/* CONTACT section*/
-
-.contact {
-    align-items: center;
-    background-color: var(--main-blue);
-    color: var(--text-light);
-    color: var(--text-light);
-    display: flex;
-    justify-content: center;
-    margin-top: 61px;
-    position: relative;
-}
-
-.contact-background {
-    align-items: center;
-    background-color: #44606a;
-    display: flex;
-    height: 40vh;
-    justify-content: center;
-    width: 100%;
-}
-
-.contact h2 {
-    padding: 30.4px 0 36.8px 0;
-}
-
-.contact figure {
-    align-items: center;
-    display: flex;
-    font-size: 1rem;
-    margin-bottom: 21px;
-}
-
-.contact figure img {
-    height: 40px;
-    margin-right: 15px;
-}
-
-.contact-photo {
-    height: 100%;
-    padding-left: 96px;
-}
-
-.course .newsletter-input::placeholder {
-    color: white;
-}
-
-
-/* footer */
+/* Footer */
 
 footer {
     border-top: 1px solid #44606a;
