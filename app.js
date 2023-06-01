@@ -124,7 +124,6 @@ const courseDes5 = document.querySelector("#course-des-5");
 let activeDes = courseDes1;
 
 const changeDescription = () => {
-    console.log(courseTitle.value)
     if(courseTitle.value === "Liderowanie i budowanie zespołu") {
         activeDes.style.display = "none";
         courseDes1.style.display = "block";
