@@ -407,7 +407,6 @@ h1 {
     font-size: 1.5rem;
 }
 
-
 #btn-course {
     border-radius: 50%;
     border: 1px solid var(--text-dark);
@@ -431,9 +430,25 @@ h1 {
 
 .course select {
     border-radius: 10px;
-    margin: 20px 0px;
-    padding: 10px;
     max-width: fit-content;
+    padding: 10px;
+    margin-right: 10px;
+}
+
+.course-form--type-wrapper {
+    margin: 20px 0px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.course-form__show-des-button {
+    background-color: black;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    width: fit-content;
+    margin: 10px 0px;
 }
 
 .course input {
@@ -447,7 +462,7 @@ h1 {
     max-width: 300px;
 }
 
-#course-des-2, #course-des-3, #course-des-4, #course-des-5 {
+#course-des-1, #course-des-2, #course-des-3, #course-des-4, #course-des-5 {
     display: none;
 }
 

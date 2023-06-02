@@ -106,13 +106,17 @@
                 <form class="course-form" action="send-email.php" method="POST">
                     <h2>Strefa kursu</h2>
                     <label for="course-form--type"><h3>Wybierz temat kursu dla siebie</h3></label> 
-                    <select id="course-form--type" name="course-form--type">
-                        <option value="Liderowanie i budowanie zespołu">Liderowanie i budowanie zespołu</option>
-                        <option value="Zarządzanie zmianą">Zarządzanie zmianą</option>
-                        <option value="Umiejętności negocjacyjne i konfliktowe">Umiejętności negocjacyjne i konfliktowe</option>
-                        <option value="Zarządzanie czasem i priorytetami">Zarządzanie czasem i priorytetami</option>
-                        <option value="Zarządzanie różnorodnością i inkluzją">Zarządzanie różnorodnością i inkluzją</option>
-                    </select>
+                    <div class="course-form--type-wrapper">
+                        <select id="course-form--type" name="course-form--type">
+                            <option id="option1" value="Liderowanie i budowanie zespołu">Liderowanie i budowanie zespołu</option>
+                            <option id="option2" value="Zarządzanie zmianą">Zarządzanie zmianą</option>
+                            <option id="option3" value="Umiejętności negocjacyjne i konfliktowe">Umiejętności negocjacyjne i konfliktowe</option>
+                            <option id="option4" value="Zarządzanie czasem i priorytetami">Zarządzanie czasem i priorytetami</option>
+                            <option id="option5" value="Zarządzanie różnorodnością i inkluzją">Zarządzanie różnorodnością i inkluzją</option>
+                        </select>
+                        <span class="course-form__show-des-button">Pokaż&nbsp;opis</span>
+                    </div>
+
                     <p id="course-des-1">To szkolenie skupia się na umiejętnościach przywódczych i technikach zarządzania, które pomogą kadrze zarządzającej stać się skutecznymi liderami. Tematyka może obejmować budowanie zaufania, motywowanie pracowników, delegowanie zadań, rozwiązywanie konfliktów i budowanie efektywnego zespołu.</p>
                     <p id="course-des-2">Szkolenie dotyczące zarządzania zmianą ma na celu przygotowanie kadry zarządzającej do skutecznego wprowadzania i zarządzania zmianami w organizacji. Tematyka może obejmować strategie komunikacji, zarządzanie oporem, identyfikację i minimalizację ryzyka oraz budowanie elastyczności organizacyjnej.</p>
                     <p id="course-des-3">To szkolenie koncentruje się na rozwijaniu umiejętności negocjacyjnych i rozwiązywaniu konfliktów. Tematyka może obejmować techniki negocjacyjne, umiejętność słuchania, radzenie sobie z trudnymi sytuacjami, mediację i budowanie pozytywnych relacji w organizacji.</p>

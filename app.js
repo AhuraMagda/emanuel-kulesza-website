@@ -89,8 +89,8 @@ navLinks.forEach(link=>{link.addEventListener("click", ()=>{
 
 // observe dark background
 
-const newsletterSection = document.querySelector(".newsletter")
-const contactSection = document.querySelector(".contact")
+const newsletterSection = document.querySelector(".newsletter");
+const contactSection = document.querySelector(".contact");
 
 const backgroundObserverOptions = {
     root: null,
@@ -121,9 +121,16 @@ const courseDes3 = document.querySelector("#course-des-3");
 const courseDes4 = document.querySelector("#course-des-4");
 const courseDes5 = document.querySelector("#course-des-5");
 
+const option1 = document.querySelector("#option1");
+const option2 = document.querySelector("#option2");
+const option3 = document.querySelector("#option3");
+const option4 = document.querySelector("#option4");
+const option5 = document.querySelector("#option5");
+
 let activeDes = courseDes1;
 
 const changeDescription = () => {
+    courseShowDesBut.style.display = "none";
     if(courseTitle.value === "Liderowanie i budowanie zespołu") {
         activeDes.style.display = "none";
         courseDes1.style.display = "block";
@@ -148,4 +155,6 @@ const changeDescription = () => {
 }
 
 
-courseTitle.addEventListener("click", changeDescription)
+const courseShowDesBut = document.querySelector(".course-form__show-des-button");
+courseShowDesBut.addEventListener("click", changeDescription);
+courseTitle.addEventListener("click", () => {activeDes.style.display="none"; courseShowDesBut.style.display = "block"});
