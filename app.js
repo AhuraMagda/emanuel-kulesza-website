@@ -82,7 +82,7 @@ window.addEventListener("load", function() {
 
 // nav hidding after click
 
-navLinks.forEach(link=>{link.addEventListener("click", ()=>{
+navLinks.forEach(link=>{link.addEventListener("click", () => {
     mobileNav.classList.remove('active')
 })})
 

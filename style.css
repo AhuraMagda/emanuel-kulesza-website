@@ -378,7 +378,6 @@ h1 {
 }
 
 
-
 /* SHOP section */
 
 .shop {
@@ -505,6 +504,7 @@ h1 {
     padding: 0;
 }
 
+
 /* NEWSLETTER section*/
 
 .newsletter {
@@ -559,8 +559,6 @@ h1 {
 .newsletter-input::placeholder {
     color: var(--dark-beige)
 }
-
-
 
 .newsletter a:hover {
     text-decoration: underline;
@@ -730,7 +728,3 @@ footer a {
     width: 100%;
     z-index: 999;
 }
-
-
-
-
