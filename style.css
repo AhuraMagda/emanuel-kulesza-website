@@ -474,11 +474,18 @@ h1 {
     cursor: pointer;
     padding: 10px;
     width: fit-content;
-    margin: 10px 0px;
+    transition: color 700ms, background-color 700ms;
 }
+
+.course-form__topic--show-des-button:hover {
+    background-color: white;
+    color: black;
+}
+
 
 #course-des-1, #course-des-2, #course-des-3, #course-des-4, #course-des-5 {
     display: none;
+    transition: display 3s;
 }
 
 .course input {
