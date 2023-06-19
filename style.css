@@ -46,7 +46,7 @@ a {
 
 /* buttons */
 
-.main-button {
+.btn-main {
     background-color: transparent;
     border: 1px solid var(--dark-beige);
     color: var(--dark-beige);
@@ -56,11 +56,50 @@ a {
     transition: .5s;
 } 
 
-.main-button:hover {
+.btn-main:hover {
     background-color: var(--dark-beige);
     color: var(--main-blue);
 }
 
+.btn-loading {
+    align-items: center;
+    align-self: flex-end;
+    background-color: white;
+    border-radius: 4.8px;
+    border: 1px solid rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    display: flex;
+    height: 32px;
+    justify-content: center;
+    margin: 9.6px 0;
+    overflow: hidden;
+    padding: 21px;
+    position: relative;
+    transition: .5s;
+    width: 100px;
+    z-index: 1;
+}
+
+.btn-loading:hover {
+    color: white;
+}
+
+.btn-loading::before {
+    background-color: rgb(0, 0, 0);
+    content: "";
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    transition: .6s;
+    width: 0%;
+    z-index: -1;
+}
+
+.btn-loading:hover::before{
+    width: 100%;
+}
 
 /* NAVIGATION */
 
@@ -268,6 +307,7 @@ h1 {
     );
     background-size: 200%;
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
@@ -338,7 +378,6 @@ h1 {
 }
 
 
-
 /* SHOP section */
 
 .shop {
@@ -398,6 +437,14 @@ h1 {
     justify-content: center;
 }
 
+.course form {
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    max-width: 550px;
+    width: 70%;
+}
+
 .course h2 {
     font-size: clamp(1rem, 9vw, 3rem);
     padding-bottom: 20px;
@@ -407,25 +454,10 @@ h1 {
     font-size: 1.5rem;
 }
 
-#btn-course {
-    border-radius: 50%;
-    border: 1px solid var(--text-dark);
-    color: var(--text-dark);
-    height: 128px;
-    width: 128px;
-}
-
-#btn-course:hover {
-    background-color: var(--text-dark);
-    color: var(--light-beige);
-}
-
-.course form {
-    border-radius: 10px;
+.course-form__topic-wrapper {
+    margin: 20px 0px;
     display: flex;
-    flex-direction: column;
-    max-width: 550px;
-    width: 70%;
+    flex-wrap: wrap;
 }
 
 .course select {
@@ -435,13 +467,7 @@ h1 {
     margin-right: 10px;
 }
 
-.course-form--type-wrapper {
-    margin: 20px 0px;
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.course-form__show-des-button {
+.course-form__topic--show-des-button {
     background-color: black;
     border-radius: 10px;
     color: white;
@@ -449,6 +475,10 @@ h1 {
     padding: 10px;
     width: fit-content;
     margin: 10px 0px;
+}
+
+#course-des-1, #course-des-2, #course-des-3, #course-des-4, #course-des-5 {
+    display: none;
 }
 
 .course input {
@@ -462,10 +492,6 @@ h1 {
     max-width: 300px;
 }
 
-#course-des-1, #course-des-2, #course-des-3, #course-des-4, #course-des-5 {
-    display: none;
-}
-
 
 /* INSTAGRAM section*/
 
@@ -477,6 +503,7 @@ h1 {
     justify-content: center;
     padding: 0;
 }
+
 
 /* NEWSLETTER section*/
 
@@ -531,46 +558,6 @@ h1 {
 
 .newsletter-input::placeholder {
     color: var(--dark-beige)
-}
-
-.btn-news {
-    align-items: center;
-    align-self: flex-end;
-    background-color: white;
-    border-radius: 4.8px;
-    border: 1px solid rgb(255, 255, 255);
-    color: rgb(0, 0, 0);
-    cursor: pointer;
-    display: flex;
-    height: 32px;
-    justify-content: center;
-    margin: 9.6px 0;
-    overflow: hidden;
-    padding: 21px;
-    position: relative;
-    transition: .5s;
-    width: 100px;
-    z-index: 1;
-}
-
-.btn-news:hover {
-    color: white;
-}
-
-.btn-news::before {
-    background-color: rgb(0, 0, 0);
-    content: "";
-    height: 100%;
-    left: 0;
-    position: absolute;
-    top: 0;
-    transition: .6s;
-    width: 0%;
-    z-index: -1;
-}
-
-.btn-news:hover::before{
-    width: 100%;
 }
 
 .newsletter a:hover {
@@ -741,7 +728,3 @@ footer a {
     width: 100%;
     z-index: 999;
 }
-
-
-
-

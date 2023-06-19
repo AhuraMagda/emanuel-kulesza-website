@@ -44,7 +44,7 @@
                 <div class="intro-text-wrapper">
                     <div class="intro-text">
                         <h1 class="magic">Moje największe dokonania powstały za pomocą myśli oraz uważnej analizy potrzeb klienta, przeanalizuj ze mną swoją sytuację i&nbsp;popraw skuteczność w&nbsp;biznesie i&nbsp;życiu.</h1>
-                        <a class="main-button" href="#course">Nawiąż współpracę</a>
+                        <a class="btn-main" href="#course">Nawiąż współpracę</a>
                     </div>
                 </div>
 
@@ -91,12 +91,12 @@
                 <div>
                     <img class="shop-img" src="./images/book-cover.png" alt="zdjęcie książki Emanuela Kuleszy">
                     <p>Książka pt "16 kroków dzięki którym osiągniesz&nbsp;sukces</p>
-                    <button onclick="window.open('https://emanuelkulesza.v.1cart.eu/pl/product/zwwKp/ksiazka-16-krokow-dzieki-ktorym-osiagniesz-sukces')" class="main-button btn-shop">Kup teraz</button>
+                    <button onclick="window.open('https://emanuelkulesza.v.1cart.eu/pl/product/zwwKp/ksiazka-16-krokow-dzieki-ktorym-osiagniesz-sukces')" class="btn-main btn-shop">Kup teraz</button>
                 </div>
                 <div>
                     <img class="shop-img" src="./images/ebook-cover.png" alt="zdjęcie e-booka Emanuela Kuleszy">
                     <p>E-book pt "16 kroków dzięki którym osiągniesz&nbsp;sukces"</p>
-                    <button onclick="window.open('https://emanuelkulesza.v.1cart.eu/pl/product/x3323/e-book-16-krokow-dzieki-ktorym-osiagniesz-sukces')" class="main-button btn-shop">Kup teraz</button>
+                    <button onclick="window.open('https://emanuelkulesza.v.1cart.eu/pl/product/x3323/e-book-16-krokow-dzieki-ktorym-osiagniesz-sukces')" class="btn-main btn-shop">Kup teraz</button>
                 </div>
             </div>
         </section>
@@ -104,16 +104,16 @@
         <section id="course" class="course scroll-snap">
                 <form class="course-form" action="send-email.php" method="POST">
                     <h2>Strefa kursu</h2>
-                    <label for="course-form--type"><h3>Wybierz temat kursu dla siebie</h3></label> 
-                    <div class="course-form--type-wrapper">
-                        <select id="course-form--type" name="course-form--type">
+                    <label for="course-form__topic"><h3>Wybierz temat kursu dla siebie</h3></label> 
+                    <div class="course-form__topic-wrapper">
+                        <select id="course-form__topic" name="course-form__topic">
                             <option id="option1" value="Liderowanie i budowanie zespołu">Liderowanie i budowanie zespołu</option>
                             <option id="option2" value="Zarządzanie zmianą">Zarządzanie zmianą</option>
                             <option id="option3" value="Umiejętności negocjacyjne i konfliktowe">Umiejętności negocjacyjne i konfliktowe</option>
                             <option id="option4" value="Zarządzanie czasem i priorytetami">Zarządzanie czasem i priorytetami</option>
                             <option id="option5" value="Zarządzanie różnorodnością i inkluzją">Zarządzanie różnorodnością i inkluzją</option>
                         </select>
-                        <span class="course-form__show-des-button">Pokaż&nbsp;opis</span>
+                        <span class="course-form__topic--show-des-button">Pokaż&nbsp;opis</span>
                     </div>
 
                     <p id="course-des-1">To szkolenie skupia się na umiejętnościach przywódczych i technikach zarządzania, które pomogą kadrze zarządzającej stać się skutecznymi liderami. Tematyka może obejmować budowanie zaufania, motywowanie pracowników, delegowanie zadań, rozwiązywanie konfliktów i budowanie efektywnego zespołu.</p>
@@ -125,7 +125,7 @@
                     <p style="color: white">Jeśli jesteś zainteresowany podaj swoje dane, a ja skontaktuję się z Tobą w celu ustalenia szczegółów.</p>
                     <input type=text id="course-form--name" name="course-form--name" required placeholder="Imię i nazwisko">
                     <input type=email id="course-form--email" name="course-form--email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required placeholder="E-mail">
-                    <button class="btn-news" type="submit">zapisz</button>
+                    <button class="btn-loading" type="submit">zapisz</button>
                 </form>
         </section>
     
@@ -149,7 +149,7 @@
                         <input class="newsletter-input news-name" type="text" name="first_name" required placeholder="Imię"/><br/>
                         <input class="newsletter-input" type="text" name="email" required placeholder="E-mail"/><br/>
                         <input type="hidden" name="campaign_token" value="qlUdG" />
-                        <button type="submit" class="btn-news">zapisz</button>
+                        <button type="submit" class="btn-loading">zapisz</button>
                     </form>
                 </div>
             </div>

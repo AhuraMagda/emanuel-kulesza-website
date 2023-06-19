@@ -124,49 +124,44 @@ backgroundObserver.observe(newsletterSection)
 backgroundObserver.observe(header)
 
 
-// change description in course part after selecting the course
+// description shows after clicking the button and hides when option is being changed
 
-let courseTitle = document.querySelector("#course-form--type");
+let courseTitle = document.querySelector("#course-form__topic");
 const courseDes1 = document.querySelector("#course-des-1");
 const courseDes2 = document.querySelector("#course-des-2");
 const courseDes3 = document.querySelector("#course-des-3");
 const courseDes4 = document.querySelector("#course-des-4");
 const courseDes5 = document.querySelector("#course-des-5");
 
-const option1 = document.querySelector("#option1");
-const option2 = document.querySelector("#option2");
-const option3 = document.querySelector("#option3");
-const option4 = document.querySelector("#option4");
-const option5 = document.querySelector("#option5");
+const courseShowDesBut = document.querySelector(".course-form__topic--show-des-button");
 
 let activeDes = courseDes1;
 
 const changeDescription = () => {
     courseShowDesBut.style.display = "none";
+    activeDes.style.display = "none";
     if(courseTitle.value === "Liderowanie i budowanie zespołu") {
-        activeDes.style.display = "none";
         courseDes1.style.display = "block";
         activeDes = courseDes1;
     } else if(courseTitle.value === "Zarządzanie zmianą") {
-        activeDes.style.display = "none";
         courseDes2.style.display = "block";
         activeDes = courseDes2;
     } else if(courseTitle.value === "Umiejętności negocjacyjne i konfliktowe") {
-        activeDes.style.display = "none";
         courseDes3.style.display = "block";
         activeDes = courseDes3;
     } else if(courseTitle.value === "Zarządzanie czasem i priorytetami") {
-        activeDes.style.display = "none";
         courseDes4.style.display = "block";
         activeDes = courseDes4;
     } else if(courseTitle.value === "Zarządzanie różnorodnością i inkluzją") {
-        activeDes.style.display = "none";
         courseDes5.style.display = "block";
         activeDes = courseDes5;
     }
 }
 
+const hideDescriptionShowButton = () => {
+    activeDes.style.display = "none"; 
+    courseShowDesBut.style.display = "block";
+}
 
-const courseShowDesBut = document.querySelector(".course-form__show-des-button");
 courseShowDesBut.addEventListener("click", changeDescription);
-courseTitle.addEventListener("click", () => {activeDes.style.display="none"; courseShowDesBut.style.display = "block"});
+courseTitle.addEventListener("click", hideDescriptionShowButton);
