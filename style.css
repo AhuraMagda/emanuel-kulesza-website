@@ -193,7 +193,7 @@ nav li::before {
     position: absolute;
     right: 10%;
     top: 64px;
-    width: 32px;
+    width: fit-content;
     z-index: 5;
   }
   
@@ -207,22 +207,22 @@ nav li::before {
     width: 48px;
 }
 
-#toggle:checked + .hamburger .top-bun {
+.hamburger--top-bun_checked {
     transform: rotate(-45deg) translateX(-6.4px) translateY(12px);
     margin-top: 16px;
 }
 
-#toggle:checked + .hamburger .bottom-bun {
+.hamburger--bottom-bun_checked {
     opacity: 0;
     transform: rotate(45deg);
 }
 
-#toggle:checked + .hamburger .meat {
-    transform: rotate(45deg) translate(16px) translateY(8.8px);
+.hamburger--meat_checked {
+    transform: rotate(45deg) translate(5px) translateY(-3.2px);
     margin-top: -7.2px;
 }
 
-#toggle:checked + .hamburger + .nav {
+.hamburger_checked {
     top: 0;
     transform: scale(1);
 }

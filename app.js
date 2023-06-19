@@ -52,9 +52,9 @@ const instagramObserver = new IntersectionObserver(function(entries, instagramOb
             burgerIcon.classList.add('hamburger-active')
             nav.classList.add("nav-active")
         } else {
+            logo.style.display = "block";   
             burgerIcon.classList.remove('hamburger-active')
             nav.classList.remove("nav-active")
-            logo.style.display = "block";   
         }
     })
 }, instaObserverOptions)
@@ -66,10 +66,18 @@ instagramObserver.observe(instagramSection)
 
 const burgerIcon = document.querySelector(".hamburger")
 const mobileNav = document.querySelector("nav ul");
+const hamburgerTopBun = document.querySelector(".top-bun")
+const hamburgerBottomBun = document.querySelector(".bottom-bun")
+const hamburgerMeat = document.querySelector(".meat")
+
+
 
 burgerIcon.addEventListener('click', function(){
     mobileNav.classList.toggle('active');
-    burgerIcon.classList.toggle('active');
+    hamburgerTopBun.classList.toggle("hamburger--top-bun_checked")
+    hamburgerBottomBun.classList.toggle("hamburger--bottom-bun_checked")
+    hamburgerMeat.classList.toggle("hamburger--meat_checked")
+    burgerIcon.classList.toggle(".hamburger_checked")
 })
 
 
@@ -82,8 +90,12 @@ window.addEventListener("load", function() {
 
 // nav hidding after click
 
-navLinks.forEach(link=>{link.addEventListener("click", () => {
-    mobileNav.classList.remove('active')
+navLinks.forEach(link=>{link.addEventListener("click", ()=>{
+    mobileNav.classList.remove('active');
+    hamburgerTopBun.classList.toggle("hamburger--top-bun_checked")
+    hamburgerBottomBun.classList.toggle("hamburger--bottom-bun_checked")
+    hamburgerMeat.classList.toggle("hamburger--meat_checked")
+    burgerIcon.classList.toggle(".hamburger_checked")
 })})
 
 
