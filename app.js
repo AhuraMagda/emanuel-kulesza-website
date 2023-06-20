@@ -62,7 +62,7 @@ const instagramObserver = new IntersectionObserver(function(entries, instagramOb
 instagramObserver.observe(instagramSection)
 
 
-// hamburger mobile
+// hamburger menu
 
 const burgerIcon = document.querySelector(".hamburger")
 const mobileNav = document.querySelector("nav ul");
@@ -70,32 +70,23 @@ const hamburgerTopBun = document.querySelector(".top-bun")
 const hamburgerBottomBun = document.querySelector(".bottom-bun")
 const hamburgerMeat = document.querySelector(".meat")
 
+const changeBurgerToX = () => {
+    hamburgerTopBun.classList.toggle("hamburger--top-bun_clicked")
+    hamburgerBottomBun.classList.toggle("hamburger--bottom-bun_clicked")
+    hamburgerMeat.classList.toggle("hamburger--meat_clicked")
+}
 
-
-burgerIcon.addEventListener('click', function(){
-    mobileNav.classList.toggle('active');
-    hamburgerTopBun.classList.toggle("hamburger--top-bun_checked")
-    hamburgerBottomBun.classList.toggle("hamburger--bottom-bun_checked")
-    hamburgerMeat.classList.toggle("hamburger--meat_checked")
-    burgerIcon.classList.toggle(".hamburger_checked")
-})
-
-
-// preloader
-const loader = document.querySelector("#preloader");
-window.addEventListener("load", function() {
-    loader.style.display = "none";
+burgerIcon.addEventListener('click', function() {
+    mobileNav.classList.toggle('active'); 
+    changeBurgerToX();
 })
 
 
 // nav hidding after click
 
-navLinks.forEach(link=>{link.addEventListener("click", ()=>{
+navLinks.forEach(link=>{link.addEventListener("click", () => {
     mobileNav.classList.remove('active');
-    hamburgerTopBun.classList.toggle("hamburger--top-bun_checked")
-    hamburgerBottomBun.classList.toggle("hamburger--bottom-bun_checked")
-    hamburgerMeat.classList.toggle("hamburger--meat_checked")
-    burgerIcon.classList.toggle(".hamburger_checked")
+    changeBurgerToX();
 })})
 
 
@@ -165,3 +156,9 @@ const hideDescriptionShowButton = () => {
 
 courseShowDesBut.addEventListener("click", changeDescription);
 courseTitle.addEventListener("click", hideDescriptionShowButton);
+
+// preloader
+const loader = document.querySelector("#preloader");
+window.addEventListener("load", function() {
+    loader.style.display = "none";
+})

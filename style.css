@@ -207,24 +207,19 @@ nav li::before {
     width: 48px;
 }
 
-.hamburger--top-bun_checked {
-    transform: rotate(-45deg) translateX(-6.4px) translateY(12px);
+.hamburger--top-bun_clicked {
+    transform: rotate(-45deg) translateX(-6.4px) translateY(15px);
     margin-top: 16px;
 }
 
-.hamburger--bottom-bun_checked {
-    opacity: 0;
-    transform: rotate(45deg);
-}
-
-.hamburger--meat_checked {
+.hamburger--meat_clicked {
     transform: rotate(45deg) translate(5px) translateY(-3.2px);
     margin-top: -7.2px;
 }
 
-.hamburger_checked {
-    top: 0;
-    transform: scale(1);
+.hamburger--bottom-bun_clicked {
+    opacity: 0;
+    transform: rotate(45deg);
 }
 
 
