@@ -147,7 +147,7 @@ nav li {
 
 nav a {
     position: relative;
-    padding: 9.6px 20.8px;
+    padding: 9.6px 20.8px;  
 }
 
 nav a::before, nav a::after {
@@ -470,8 +470,8 @@ h1 {
 .course select {
     border-radius: 10px;
     max-width: fit-content;
+    margin: 5px 10px 5px 5px;
     padding: 10px;
-    margin-right: 10px;
 }
 
 .course-form__topic__show-des-button {
@@ -479,6 +479,7 @@ h1 {
     border-radius: 10px;
     color: white;
     cursor: pointer;
+    margin: 5px;
     padding: 10px;
     width: fit-content;
     transition: color 700ms, background-color 700ms;
