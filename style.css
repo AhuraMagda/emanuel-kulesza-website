@@ -5,6 +5,7 @@
     box-sizing: border-box;
     font-family: 'Lora', serif;
     margin: 0px;
+    padding: 0px;
 }
 
 :root {
@@ -16,6 +17,9 @@
 }
 
 /* PAGE settings */
+.add-padding {
+    padding: 10px 0px;
+}
 
 .scroll-snap {
     height: 100vh;
@@ -118,7 +122,8 @@ nav {
     z-index: 2;
 }
 
-.logo {
+.nav__logo {
+    height: auto;
     max-width: 512px;
     min-width: 176px;
     padding: 16px;
@@ -349,6 +354,7 @@ h1 {
 }
 
 .about-me-img-big {
+    height: auto;
     margin-left: 30.4px;
     margin-top: 72px;
     width: 28vw;
@@ -412,6 +418,7 @@ h1 {
 
 .shop-img {
     height: 300px;
+    width: auto;
 }
 
 .btn-shop {
@@ -467,7 +474,7 @@ h1 {
     margin-right: 10px;
 }
 
-.course-form__topic--show-des-button {
+.course-form__topic__show-des-button {
     background-color: black;
     border-radius: 10px;
     color: white;
@@ -477,7 +484,7 @@ h1 {
     transition: color 700ms, background-color 700ms;
 }
 
-.course-form__topic--show-des-button:hover {
+.course-form__topic__show-des-button:hover {
     background-color: white;
     color: black;
 }
@@ -685,6 +692,8 @@ footer a {
 
     .about-me-img-big {
         display: none;
+        max-width: 300px;
+        height: auto;
     }
     
     .about-me-img-circle {

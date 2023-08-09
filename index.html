@@ -9,7 +9,6 @@
     <meta name="author" content="Emanuel Kulesza">
     <link rel="icon" href="./images/favicon.ico?v=2">
     <title>Emanuel Kulesza</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     
     <!-- Roboto, Lora -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -24,13 +23,13 @@
     <div class="page-wrapper">
 
         <nav>
-            <img class="logo" src="./images/logo-light.png" alt="logo Emanuel Kulesza">
+            <img class="nav__logo" src="./images/logo-light.png" alt="logo Emanuel Kulesza">
             <ul>
-                <li><a class="menuLink" href='#about-me'>BIO</a></li>
-                <li><a class="menuLink" href='#shop'>Sklep</a></li>
-                <li><a class="menuLink" href='#course'>Strefa&nbsp;kurs</a></li>
-                <li><a class="menuLink" href='#instagram'>Aktualności</a></li>
-                <li><a class="menuLink" href='#newsletter'>Newsletter</a></li>
+                <li><a href='#about-me'>BIO</a></li>
+                <li><a href='#shop'>Sklep</a></li>
+                <li><a href='#course'>Strefa&nbsp;kurs</a></li>
+                <li><a href='#instagram'>Aktualności</a></li>
+                <li><a href='#newsletter'>Newsletter</a></li>
             </ul>
             
             <div class="hamburger">
@@ -114,7 +113,7 @@
                             <option id="option4" value="Zarządzanie czasem i priorytetami">Zarządzanie czasem i priorytetami</option>
                             <option id="option5" value="Zarządzanie różnorodnością i inkluzją">Zarządzanie różnorodnością i inkluzją</option>
                         </select>
-                        <span class="course-form__topic--show-des-button">Pokaż&nbsp;opis</span>
+                        <span class="course-form__topic__show-des-button">Pokaż&nbsp;opis</span>
                     </div>
 
                     <p id="course-des-1">To szkolenie skupia się na umiejętnościach przywódczych i technikach zarządzania, które pomogą kadrze zarządzającej stać się skutecznymi liderami. Tematyka może obejmować budowanie zaufania, motywowanie pracowników, delegowanie zadań, rozwiązywanie konfliktów i budowanie efektywnego zespołu.</p>
@@ -123,7 +122,7 @@
                     <p id="course-des-4">Szkolenie skierowane na rozwijanie umiejętności skutecznego zarządzania czasem i priorytetami. Tematyka może obejmować planowanie czasu, priorytetyzację zadań, eliminowanie marnowania czasu, delegowanie i efektywne wykorzystanie narzędzi do zarządzania czasem.</p>
                     <p id="course-des-5">Szkolenie skupione na budowaniu umiejętności zarządzania różnorodnym zespołem i tworzeniu kultury organizacyjnej opartej na inkluzji. Tematyka może obejmować świadomość różnorodności, techniki rekrutacji i utrzymania różnorodnego personelu, tworzenie równych szans, eliminowanie uprzedzeń i tworzenie inkluzywnych procesów decyzyjnych.</p>
                     <h4>Zapisz się</h4>
-                    <p>Jeśli jesteś zainteresowany podaj swoje dane, a ja skontaktuję się z Tobą w celu ustalenia szczegółów.</p>
+                    <p class="add-padding">Jeśli jesteś zainteresowany podaj swoje dane, a ja skontaktuję się z Tobą w celu ustalenia szczegółów.</p>
                     <input type=text id="course-form--name" name="course-form--name" required placeholder="Imię i nazwisko">
                     <input type=email id="course-form--email" name="course-form--email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required placeholder="E-mail">
                     <button class="btn-loading" type="submit">zapisz</button>
@@ -143,7 +142,7 @@
                     <p>nic cię nie kosztuje.</p>
                 </div>
                 <div>
-                    <p>Zapisz się na listę odbiorców newslettera<br>
+                    <p class="add-padding">Zapisz się na listę odbiorców newslettera<br>
                         i pobierz za darmo pierwszy&nbsp;rozdział mojej książki<br>
                         pt "16 kroków, dzięki którym osiągniesz sukces".</p>
                     <form action="https://app.getresponse.com/add_subscriber.html" accept-charset="utf-8" method="post">
@@ -156,7 +155,7 @@
             </div>
 
             <footer>
-                <p>Copyright @ 2023 Emanuel Kulesza</p>
+                <p id="footer__date"></p>
                 <p><a href="./privacypolicy.html" target="_blank">Polityka prywatności</a></p>
                 <p>Website by <a href="https://github.com/AhuraMagda" target="_blank">AhuraMagda</a></p>
                 <p><a href="https://www.freepik.com/free-photo/woman-playing-laptop-hold-credit-card_8351797.htm#query=shop%20online&position=2&from_view=search&track=ais" target="_blank">Image by jcomp</a></p>            
