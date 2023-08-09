@@ -208,7 +208,7 @@ nav li::before {
 }
 
 .hamburger--top-bun_checked {
-    transform: rotate(-45deg) translateX(-6.4px) translateY(12px);
+    transform: rotate(-45deg) translateX(-6.4px) translateY(14px);
     margin-top: 16px;
 }
 
