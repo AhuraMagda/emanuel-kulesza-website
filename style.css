@@ -5,6 +5,7 @@
     box-sizing: border-box;
     font-family: 'Lora', serif;
     margin: 0px;
+    padding: 0px;
 }
 
 :root {
@@ -16,6 +17,9 @@
 }
 
 /* PAGE settings */
+.add-padding {
+    padding: 10px 0px;
+}
 
 .scroll-snap {
     height: 100vh;
@@ -118,7 +122,8 @@ nav {
     z-index: 2;
 }
 
-.logo {
+.nav__logo {
+    height: auto;
     max-width: 512px;
     min-width: 176px;
     padding: 16px;
@@ -130,6 +135,7 @@ nav ul {
     justify-content: space-around;
     list-style: none;
     margin-bottom: 0;
+    padding-left: 40px;
     width: 47%;
 }
 
@@ -142,7 +148,7 @@ nav li {
 
 nav a {
     position: relative;
-    padding: 9.6px 20.8px;
+    padding: 9.6px 20.8px;  
 }
 
 nav a::before, nav a::after {
@@ -207,8 +213,8 @@ nav li::before {
     width: 48px;
 }
 
-.hamburger--top-bun_clicked {
-    transform: rotate(-45deg) translateX(-6.4px) translateY(15px);
+.hamburger--top-bun_checked {
+    transform: rotate(-45deg) translateX(-6.4px) translateY(14px);
     margin-top: 16px;
 }
 
@@ -344,6 +350,7 @@ h1 {
 }
 
 .about-me-img-big {
+    height: auto;
     margin-left: 30.4px;
     margin-top: 72px;
     width: 28vw;
@@ -407,6 +414,7 @@ h1 {
 
 .shop-img {
     height: 300px;
+    width: auto;
 }
 
 .btn-shop {
@@ -458,21 +466,22 @@ h1 {
 .course select {
     border-radius: 10px;
     max-width: fit-content;
+    margin: 5px 10px 5px 5px;
     padding: 10px;
-    margin-right: 10px;
 }
 
-.course-form__topic--show-des-button {
+.course-form__topic__show-des-button {
     background-color: black;
     border-radius: 10px;
     color: white;
     cursor: pointer;
+    margin: 5px;
     padding: 10px;
     width: fit-content;
     transition: color 700ms, background-color 700ms;
 }
 
-.course-form__topic--show-des-button:hover {
+.course-form__topic__show-des-button:hover {
     background-color: white;
     color: black;
 }
@@ -680,6 +689,8 @@ footer a {
 
     .about-me-img-big {
         display: none;
+        max-width: 300px;
+        height: auto;
     }
     
     .about-me-img-circle {

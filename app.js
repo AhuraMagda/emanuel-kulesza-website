@@ -37,7 +37,7 @@ introPhotoObserver.observe(header)
 
 // instagram observer - change to hamburger
 const instagramSection = document.querySelector(".instagram")
-const logo = document.querySelector(".logo")
+const logo = document.querySelector(".nav__logo")
 
 const instaObserverOptions = {
     root: null,
@@ -124,7 +124,7 @@ const courseDes3 = document.querySelector("#course-des-3");
 const courseDes4 = document.querySelector("#course-des-4");
 const courseDes5 = document.querySelector("#course-des-5");
 
-const courseShowDesBut = document.querySelector(".course-form__topic--show-des-button");
+const courseShowDesBut = document.querySelector(".course-form__topic__show-des-button");
 
 let activeDes = courseDes1;
 
@@ -162,3 +162,6 @@ const loader = document.querySelector("#preloader");
 window.addEventListener("load", function() {
     loader.style.display = "none";
 })
+// add copyright
+
+document.querySelector("#footer__date").innerText = `Copyright © ${new Date().getFullYear()} Emanuel Kulesza`;
