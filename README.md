@@ -1,5 +1,5 @@
 # Emanuel Kulesza Website
-This is a personal website made for Emanuel Kulesza.
+This is a personal website made for Emanuel Kulesza. Although the page is no longer in use, you can still view a live preview.
 
 ## Table of contents
 - [Overview](#overview)
@@ -12,7 +12,7 @@ This is a personal website made for Emanuel Kulesza.
 
 ## Overview
 ### Links
-- Link to the website: [https://emanuelkulesza.pl/](https://emanuelkulesza.pl/)
+- Link to the website: [https://ahuramagda.github.io/emanuelkulesza.pl/](https://ahuramagda.github.io/emanuelkulesza.pl/)]
 
 ## My process
 ### Built with
